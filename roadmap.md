@@ -36,7 +36,7 @@ you can make your repositories within the CaRSA organisation private
 and you can even change your settings so that your membership to the CaRSA organisation itself 
 is only visible to other members of the organisation.
 
-## Step 2: Provenance
+## Step 2: Provenance tracking
 
 Once we've got our code in one place,
 we need to know how that code was used to produce the products we provide to end-users.
@@ -70,7 +70,7 @@ Tue Jan 12 14:48:10 2021: cdo seldate,2010-01-01,2014-12-31 /g/data/fs38/publica
 ```
 
 The new entry also includes a GitHub URL to indicate where to access our script,
-which could be replaced with a DOI if we published our code
+which could be replaced with a DOI if/when the code is published
 (e.g. using [GitHub/Zenodo integration](https://guides.github.com/activities/citable-code/))
 to ensure long term persistent access.
 
@@ -84,3 +84,22 @@ to ensure long term persistent access.
 >
 > We will continue to update and improve the package and lesson materials to fit the needs of the CaRSA project
 > and are happy to work with others to help write similar packages in other languages.
+
+## Step 3: Quality control
+
+During the initial 6-month showcase phase of CaRSA,
+we should expect that everyone hosts their code with the CaRSA GitHub organisation
+and that a number of CaRSA scientists put their hand up
+to start incorporating provenance tracking into their CaRSA workflows.
+Once CaRSA starts delivering products that are used to make real decisions
+(i.e. beyond the initial 6-month period),
+provenance tracking alone (with code published to Zenodo) isn't enough.
+There also needs to be processes in place to ensure the quality/reliability of the code we use.
+This would include the use of continuous integration to run unit tests,
+formal code review for all changes to the code base, etc.
+Once the project gets to this operational stage,
+as a team we'll need to decide exactly what quality control measures we want to put in place.
+In the meantime,
+we should be on the look out for sub-projects within CaRSA
+that could start to implement quality control measures to help guide
+our decisions regarding standards to implement across the board.
