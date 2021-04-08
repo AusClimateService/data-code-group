@@ -80,7 +80,7 @@ to ensure long term persistent access.
 > a Python library called [cmdline-provenance](https://cmdline-provenance.readthedocs.io/en/latest/) 
 > that can be used to simplify the process of creating and updating command logs.
 > There are also associated [lesson materials](https://carpentrieslab.github.io/python-aos-lesson/09-provenance/index.html)
-> for learning about how to append and access metadata for different file formats.
+> for learning how to append and access metadata for different file formats.
 >
 > We will continue to update and improve the package and lesson materials to fit the needs of the CaRSA project
-> and are happy to explore the possibility of similar packages in other languages.
+> and are happy to work with others to help write similar packages in other languages.
