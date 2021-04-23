@@ -69,10 +69,7 @@ Tue Jan 12 14:48:10 2021: cdo seldate,2010-01-01,2014-12-31 /g/data/fs38/publica
 2019-11-15T04:32:57Z ; CMOR rewrote data to be consistent with CMIP6, CF-1.7 CMIP-6.2 and CF standards.
 ```
 
-The new entry also includes a GitHub URL to indicate where to access our script,
-which could be replaced with a DOI if/when the code is published
-(e.g. using [GitHub/Zenodo integration](https://guides.github.com/activities/citable-code/))
-to ensure long term persistent access.
+The new entry also includes a GitHub URL to indicate where to access our script.
 
 > **How to create and update your own command logs**
 >
@@ -85,7 +82,38 @@ to ensure long term persistent access.
 > We will continue to update and improve the package and lesson materials to fit the needs of the CaRSA project
 > and are happy to work with others to help write similar packages in other languages.
 
-## Step 3: Quality control
+## Step 3: Publication
+
+Hosting code on GitHub is ideal for collaborative code development,
+but not for persistent long term storage of the precise version of the code
+used to produce a given output (e.g. a journal paper, data product or stakeholder report).
+The owner of the GitHub repository might change the name of the repo
+(thus breaking the original URL)
+or could even remove the repository altogether.
+The solution is to publish the code with a platform like
+[Zenodo](https://zenodo.org/) or [Figshare](https://figshare.com/),
+which are certified to issue DOIs
+(you can't get DOI certification unless you guarantee persistent long term access).
+
+Thanks to [GitHub/Zenodo integration](https://guides.github.com/activities/citable-code/),
+the code publication process is very easy.
+Once you're ready to publish your paper / data product
+you tag a formal version of your GitHub repository,
+and then with the click of a button you can send that tagged version to Zenodo.
+The ARC Centre of Excellence for Climate Extremes has created a
+[Zenodo community](https://zenodo.org/communities/arc-coe-clex/)
+to keep all their published code in the one place.
+We could do the same for CaRSA.
+
+> **What to publish?**
+> 
+> For full transparancy,
+> it's often a good idea to publish your command logs (from Step 2)
+> and the details of your software environment along with the code you've written.
+> [Chapter 13.2](https://merely-useful.tech/py-rse/provenance.html#provenance-code)
+> of *Research Software Engineering in Python* explains in detail.
+
+## Step 4: Quality control
 
 During the initial 6-month showcase phase of CaRSA,
 we should expect that everyone hosts their code with the CaRSA GitHub organisation
@@ -93,7 +121,7 @@ and that a number of CaRSA scientists put their hand up
 to start incorporating provenance tracking into their CaRSA workflows.
 Once CaRSA starts delivering products that are used to make real decisions
 (i.e. beyond the initial 6-month period),
-provenance tracking alone (with code published to Zenodo) isn't enough.
+provenance tracking (with Zenodo integration) alone isn't enough.
 There also needs to be processes in place to ensure the quality/reliability of the code we use.
 This would include the use of continuous integration to run unit tests,
 formal code review for all changes to the code base, etc.
