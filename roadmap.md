@@ -99,7 +99,7 @@ Thanks to [GitHub/Zenodo integration](https://guides.github.com/activities/citab
 the code publication process is very easy.
 Once you're ready to publish your paper / data product
 you tag a formal version of your GitHub repository,
-and then with the click of a button you can send that tagged version to Zenodo.
+and then with the click of a button send that tagged version to Zenodo.
 The ARC Centre of Excellence for Climate Extremes has created a
 [Zenodo community](https://zenodo.org/communities/arc-coe-clex/)
 to keep all their published code in the one place.
