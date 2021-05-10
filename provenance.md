@@ -1,8 +1,8 @@
 ## Provenance
 
 While the command log approach to data provenance adopted by
-NCO,
-CDO, 
+[NCO](http://nco.sourceforge.net/),
+[CDO](https://code.mpimet.mpg.de/projects/cdo),
 [`cmdline_provenance`](https://cmdline-provenance.readthedocs.io/en/latest/),
 [`xclim`](https://xclim.readthedocs.io/en/latest/api.html?highlight=history#xclim.core.formatting.update_history),
 and others
