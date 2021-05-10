@@ -29,10 +29,14 @@ For example, the `rook` package (which allows remote access to climate data)
 [ESMValTool](https://docs.esmvaltool.org/en/latest/community/diagnostic.html#recording-provenance)
 also outputs PROV-XML files.
 
-[METACLIP](http://www.metaclip.org/) is a set of vocabularies designed as domain-specific
-extensions of standards (PROV-DM, etc) for describing climate products
-([Bedia et al, 2019](https://www.sciencedirect.com/science/article/pii/S1364815218305036)).
-It was initially developed in the project QA4Seas, framed in the Copernicus Climate Change Service,
+Rather than create a labelling system in isolation,
+some groups have published their domain-specific extensions
+to the PROV standards for describing climate products. 
+For instance, METACLIP (see their
+[website](http://www.metaclip.org/), 
+[flyer](https://predictia.es/en/news/metaclip-climate-metadata-provenance) and
+[paper](https://www.sciencedirect.com/science/article/pii/S1364815218305036))
+was initially developed in the project QA4Seas (framed in the Copernicus Climate Change Service)
 as a way of dealing with seasonal forecast product provenance description.
 That project also provides a website for visualising workflows.
 The developers work in R,
