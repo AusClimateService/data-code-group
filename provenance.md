@@ -24,7 +24,7 @@ on how to use it.
 
 A PROV document consists of *agents*, *activities* and *entities* that are all connected by *relations*.
 In order to label these things, various URIs and namespaces are used.
-For example, the `rook` package (which allows remote access to climate data)
+For example, the [`rook`](https://rook-wps.readthedocs.io/en/latest/index.html) package (which allows remote access to climate data)
 [describes in detail](https://rook-wps.readthedocs.io/en/latest/prov.html) how they decide on labels.
 [ESMValTool](https://docs.esmvaltool.org/en/latest/community/diagnostic.html#recording-provenance)
 also outputs PROV-XML files.
