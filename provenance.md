@@ -13,11 +13,12 @@ and the logs can get quite long if multiple input files are involved.
 In recent years, there has been growing interest in using the 
 the [Provenance Data Model](https://www.w3.org/TR/prov-primer/) (PROV) from the World Wide Web Consortium (W3C)
 to capture the provenance of climate data products.
-It defines a core data model for building representations of the entities, people and processes
-involved in producing a piece of data or thing in the world.  
+It defines a core data model (PROV-DM) for building representations of the entities, people and processes
+involved in producing a piece of data or thing in the world,
+along with corresponding serialisations (e.g., PROV-JSON, PROV-XML, PROV-O).
 
 The [`prov`](https://prov.readthedocs.io/en/latest/) Python library supports
-PROV-O (RDF), PROV-XML, PROV-JSON import/export.
+PROV-O, PROV-XML, PROV-JSON import/export.
 There's a good [tutorial](https://nbviewer.jupyter.org/github/trungdong/notebooks/blob/master/PROV%20Tutorial.ipynb)
 on how to use it.
 
