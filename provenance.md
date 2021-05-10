@@ -37,6 +37,9 @@ as a way of dealing with seasonal forecast product provenance description.
 That project also provides a website for visualising workflows.
 The developers work in R,
 so there isn't a Python implementation as yet.
+There are similiar/competing vocabularies for describing geoscientific outputs
+(e.g. [Zhang et al., 2020](https://www.sciencedirect.com/science/article/pii/S0098300419306120))
+but it's fair to say none have widespread adoption at this stage.
 
 
 ### Definitons
