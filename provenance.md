@@ -29,8 +29,7 @@ For example, the [`rook`](https://rook-wps.readthedocs.io/en/latest/index.html) 
 [ESMValTool](https://docs.esmvaltool.org/en/latest/community/diagnostic.html#recording-provenance)
 also outputs PROV-XML files.
 
-Rather than create a labelling system in isolation,
-some groups have published their domain-specific extensions
+Some groups have published their domain-specific extensions
 to the PROV standards for describing climate products. 
 For instance, METACLIP (see their
 [website](http://www.metaclip.org/), 
