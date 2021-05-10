@@ -45,6 +45,12 @@ There are similiar/competing vocabularies for describing geoscientific outputs
 (e.g. [Zhang et al., 2020](https://www.sciencedirect.com/science/article/pii/S0098300419306120))
 but it's fair to say none have widespread adoption at this stage.
 
+### Implementing a provenance system for ACS
+
+https://provenance.readthedocs.io/en/latest/  
+https://github.com/bmabey/provenance/issues/59  
+https://github.com/roocs/rook/blob/master/rook/provenance.py  
+http://cfconventions.org/Meetings/2020-workshop/Metadata-handling-provenance-discussion-notes.pdf  
 
 ### Definitons
 
