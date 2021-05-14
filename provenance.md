@@ -11,11 +11,11 @@ involved in producing a piece of data or thing in the world,
 and the OWL standard for storing domain-specific vocabularies (or ontologies). 
 (There's also a SPARQL query language for searching the metadata once you've created it.)
 
-In recent years there has been a move towards tracking weather/climate information
+In recent years, there has been a move towards tracking weather/climate information
 with Semantic Web technology (e.g. [Ma, et al](https://www.nature.com/articles/nclimate2141)).
-For instance, it is used by the [Global Change Information System](https://data.globalchange.gov/)
-to link together all the assessments, reports, and tools produced by the US Global Change Research Program (USGCRP).
-It has also been used to publish a number of linked datasets, including ACORN-SAT
+The [Global Change Information System](https://data.globalchange.gov/) uses the technology to link together
+all the assessments, reports, and tools produced by the US Global Change Research Program,
+and it has also been used to publish a number of linked datasets, including ACORN-SAT
 ([Lefort et al, 2016](http://www.semantic-web-journal.net/content/acorn-sat-linked-climate-dataset-0)). 
 
 More recently,
