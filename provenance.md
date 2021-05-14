@@ -43,6 +43,11 @@ At the METACLIP website you can interactively view the metadata for a given prod
 The graphical representation is probably sufficient for many users,
 but experts requiring a complex technical provenance description
 can click to see more in the sidebar.
+The METACLIP developers work in R
+and have integrated their approach with the [climate4R](https://github.com/SantanderMetGroup/climate4R) package.
+There isn't a Python implementation as yet,
+but presumably one could implement the ontology using [`rdflib`](https://rdflib.readthedocs.io/en/stable/)
+(see some tentative attempts [here](https://github.com/ClimResAus/code-roadmap/blob/main/metaclip.ipynb)).
 
 In response to these developments,
 those responsible for the [CF Conventions](http://cfconventions.org/index.html)
