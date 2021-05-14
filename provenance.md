@@ -1,61 +1,52 @@
-## Provenance
+## Semantic web for code provenance?
 
-While the command log approach to data provenance adopted by
-[NCO](http://nco.sourceforge.net/),
-[CDO](https://code.mpimet.mpg.de/projects/cdo),
-[`cmdline_provenance`](https://cmdline-provenance.readthedocs.io/en/latest/),
-[`xclim`](https://xclim.readthedocs.io/en/latest/api.html?highlight=history#xclim.core.formatting.update_history),
-and others
-does the job,
-the raw text format is difficult to parse by eye (especially for non-experts)
-and the logs can get quite long if multiple input files are involved.
+The [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web) is an extension of the World Wide Web,
+through standards set by the World Wide Web Consortium (W3C).
+The goal of the Semantic Web is to make internet data machine-readable. 
 
-In recent years, there has been growing interest in using the 
-the [Provenance Data Model](https://www.w3.org/TR/prov-primer/) (PROV) from the World Wide Web Consortium (W3C)
-to capture the provenance of climate data products.
-It defines a core data model (PROV-DM) for building representations of the entities, people and processes
+The Semantic Web is built on top of two main pillars:
+the [RDF](https://www.w3.org/TR/2004/REC-rdf-primer-20040210/) (Resource Description Framework) data model
+for building representations of the entities, people and processes
 involved in producing a piece of data or thing in the world,
-along with corresponding serialisations (e.g., PROV-JSON, PROV-XML, PROV-O).
+and the OWL standard for storing domain-specific vocabularies (or ontologies). 
+(There's also a SPARQL query language for searching the metadata once you've created it.)
 
-The [`prov`](https://prov.readthedocs.io/en/latest/) Python library supports
-PROV-O, PROV-XML, PROV-JSON import/export.
-There's a good [tutorial](https://nbviewer.jupyter.org/github/trungdong/notebooks/blob/master/PROV%20Tutorial.ipynb)
-on how to use it.
+In recent years there has been a move towards tracking weather/climate information
+with Semantic Web technology (e.g. [Ma, et al](https://www.nature.com/articles/nclimate2141)).
+For instance, it is used by the [Global Change Information System](https://data.globalchange.gov/)
+to link together all the assessments, reports, and tools produced by the US Global Change Research Program (USGCRP).
+It has also been used to publish a number of linked datasets, including ACORN-SAT
+([Lefort et al, 2016](http://www.semantic-web-journal.net/content/acorn-sat-linked-climate-dataset-0)). 
 
-A PROV document consists of *agents*, *activities* and *entities* that are all connected by *relations*.
-In order to label these things, various URIs and namespaces are used.
-For example, the [`rook`](https://rook-wps.readthedocs.io/en/latest/index.html) package (which allows remote access to climate data)
-[describes in detail](https://rook-wps.readthedocs.io/en/latest/prov.html) how they decide on labels.
+More recently,
+Semantic Web technology has been used to record the actual data processing steps
+(i.e. down to the precise code/commands)
+involved in producing climate products (i.e. maps, plots or any other climate research outcome stored in a file).
+While Python packages such as [`rook`](https://rook-wps.readthedocs.io/en/latest/prov.html) and
 [ESMValTool](https://docs.esmvaltool.org/en/latest/community/diagnostic.html#recording-provenance)
-also outputs PROV-XML files.
+simply define their own bespoke/narrow adaptation of the [PROV](https://www.w3.org/TR/prov-primer/) / RDF
+data model to suit their own needs,
+there have been attempts to define a broad/comprehensive ontology for climate products
+(e.g. [Bedia et al 2019](https://www.sciencedirect.com/science/article/pii/S1364815218305036),
+[Zhang et al., 2020](https://www.sciencedirect.com/science/article/pii/S0098300419306120)).
 
-Some groups have published their domain-specific extensions
-to the PROV standards for describing climate products. 
-For instance, METACLIP (see their
+The most widely used ontology is [METACLIP](http://metaclip.org/)
+(METAdata for CLImate Products; see their
 [website](http://www.metaclip.org/), 
 [flyer](https://predictia.es/en/news/metaclip-climate-metadata-provenance) and
-[paper](https://www.sciencedirect.com/science/article/pii/S1364815218305036))
-was initially developed in the project QA4Seas (framed in the Copernicus Climate Change Service)
-as a way of dealing with seasonal forecast product provenance description.
-That project also provides a website for visualising workflows.
-The developers work in R,
-so there isn't a Python implementation as yet.
-There are similiar/competing vocabularies for describing geoscientific outputs
-(e.g. [Zhang et al., 2020](https://www.sciencedirect.com/science/article/pii/S0098300419306120))
-but it's fair to say none have widespread adoption at this stage.
+[paper](https://www.sciencedirect.com/science/article/pii/S1364815218305036)),
+which was initially developed for the Copernicus
+[QA4Seas](https://climate.copernicus.eu/quality-assurance-multi-model-seasonal-forecast-products)
+seasonal forecasting project and is now also being used for the
+[VALUE](http://www.value-cost.eu/) downscaling initiative.
+At the METACLIP website you can interactively view the metadata for a given product.
+The graphical representation is probably sufficient for many users,
+but experts requiring a complex technical provenance description
+can click to see more in the sidebar.
 
-### Implementing a provenance system for ACS
+In response to these developments,
+those responsible for the [CF Conventions](http://cfconventions.org/index.html)
+are discussing how these new ideas can be used/incorporated to improve metadata standards
+(e.g. see [these notes](http://cfconventions.org/Meetings/2020-workshop/Metadata-handling-provenance-discussion-notes.pdf)
+from the [2020 CF Workshop](http://cfconventions.org/Meetings/2020-workshop/Metadata-handling-provenance-discussion-notes.pdf)).  
 
-https://provenance.readthedocs.io/en/latest/  
-https://github.com/bmabey/provenance/issues/59  
-https://github.com/roocs/rook/blob/master/rook/provenance.py  
-http://cfconventions.org/Meetings/2020-workshop/Metadata-handling-provenance-discussion-notes.pdf  
-https://openprovenance.org/store/  
-https://www.unidata.ucar.edu/software/netcdf-java/v4.6/ncml/index.htm  
-
-### Definitons
-
-- An *entity* is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary.
-- An *activity* is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.
-- An *agent* is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent’s activity.
-- A *Uniform Resource Identifier (URI)* is a unique sequence of characters that identifies a logical or physical resource used by web technologies. URIs may be used to identify anything, including real-world objects, such as people and places, concepts, or information resources such as web pages and books.
