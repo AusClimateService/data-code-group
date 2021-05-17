@@ -11,7 +11,7 @@ many different teams and individuals across a number of institutions.
 While it probably won't be possible to have literally all our code in one place
 (e.g. some code might be primarily used for other projects/collaborations),
 the default should be for all ACS-related code to be hosted within the same GitHub organisation:  
-https://github.com/ClimResAus
+https://github.com/AusClimateService
 
 A GitHub organisation is essentially an umbrella under which to host a bunch of related GitHub repositories.
 Having all our code in one place means that we can easily see what each other is working on,
@@ -79,8 +79,17 @@ The new entry also includes a GitHub URL to indicate where to access our script.
 > There are also associated [lesson materials](https://carpentrieslab.github.io/python-aos-lesson/09-provenance/index.html)
 > for learning how to append and access metadata for different file formats.
 >
-> We will continue to update and improve the package and lesson materials to fit the needs of the CaRSA project
+> We will continue to update and improve the package and lesson materials to fit the needs of the ACS project
 > and are happy to work with others to help write similar packages in other languages.
+
+While command logs are an adequate solution to provenace tracking for those working closely with project code,
+they are difficult to decipher for most project clients and managers.
+An increasingly popular solution to this issue is the semantic web.
+It can allow for the visualisation of data processing workflows (e.g. [METACLIP](http://www.metaclip.org/))
+and also for searching/querying project metadata.
+There would be a bit of work involved in implementing semantic web provenance tracking across the ACS
+(i.e. we'd want to be sure it was worth the effort) - there's some extended notes on the topic at
+[provenance.md](https://github.com/AusClimateService/code-roadmap/blob/main/provenance.md).
 
 ## Step 3: Publication
 
@@ -103,7 +112,7 @@ and then with the click of a button send that tagged version to Zenodo.
 The ARC Centre of Excellence for Climate Extremes has created a
 [Zenodo community](https://zenodo.org/communities/arc-coe-clex/)
 to keep all their published code in the one place.
-We could do the same for CaRSA.
+We could do the same for ACS.
 
 > **What to publish?**
 > 
