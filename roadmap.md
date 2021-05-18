@@ -131,9 +131,12 @@ to start incorporating provenance tracking into their ACS workflows.
 Once ACS starts delivering products that are used to make real decisions
 (i.e. beyond the initial 6-month period),
 provenance tracking (with Zenodo integration) alone isn't enough.
-There also needs to be processes in place to ensure the quality/reliability of the code we use.
+There also needs to be processes in place to ensure the quality/reliability of the code we use
+(and the consistency of the metadata associated with the data files we produce).
 This would include the use of continuous integration to run unit tests,
-formal code review for all changes to the code base, etc.
+formal code review for all changes to the code base,
+adoption of widely used file conventions
+(e.g. CF-compliance via tools like [CMOR](https://cmor.llnl.gov/)), etc.
 Once the project gets to this operational stage,
 as a team we'll need to decide exactly what quality control measures we want to put in place.
 In the meantime,
