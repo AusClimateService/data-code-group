@@ -1,7 +1,8 @@
 # Code Roadmap
 
 This discussion paper attempts to descibe how we might go about
-managing the code that underpins the data and information the Australian Climate Service (ACS) makes available to end-users. 
+managing the code that underpins the data and information the
+[Australian Climate Service](https://www.acs.gov.au/) (ACS) makes available to end-users. 
 
 ## Step 1: Get all (or at least most of) our code in one place
 
