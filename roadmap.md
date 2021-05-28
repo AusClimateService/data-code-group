@@ -88,8 +88,9 @@ they are difficult to decipher for most project clients and managers.
 An increasingly popular solution to this issue is the semantic web.
 It can allow for the visualisation of data processing workflows (e.g. [METACLIP](http://www.metaclip.org/))
 and also for searching/querying project metadata.
-There would be a bit of work involved in implementing semantic web provenance tracking across the ACS
-(i.e. we'd want to be sure it was worth the effort) - there's some extended notes on the topic at
+There would be a bit of work involved in figuring out precisely how to implement semantic web provenance tracking across the ACS,
+so at the moment this is an idea that is being actively explored but has not yet been committed to.
+There's some extended notes on the topic at
 [provenance.md](https://github.com/AusClimateService/code-roadmap/blob/main/provenance.md).
 
 ## Step 3: Publication
