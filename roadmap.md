@@ -129,18 +129,23 @@ We could do the same for ACS.
 During the initial 6-month showcase phase of ACS,
 we should expect that everyone hosts their code with the ACS GitHub organisation
 and that a number of ACS scientists put their hand up
-to start incorporating provenance tracking into their ACS workflows.
+to start incorporating provenance tracking (via command logs) into their ACS workflows.
 Once ACS starts delivering products that are used to make real decisions
 (i.e. beyond the initial 6-month period),
 provenance tracking (with Zenodo integration) alone isn't enough.
 There also needs to be processes in place to ensure the quality/reliability of the code we use
 (and the consistency of the metadata associated with the data files we produce).
-This would include the use of continuous integration to run unit tests,
+Different products might require different levels of quality control
+(e.g. [Harrison et al, 2021](https://doi.org/10.5281/zenodo.4761866)),
+but in general for products that we're producing/reproducing regularly
+(i.e. operationalised as opposed to one-off products)
+we'll need to adopt practices such as
+continuous integration to run unit tests,
 formal code review for all changes to the code base,
 adoption of widely used file conventions
 (e.g. CF-compliance via tools like [CMOR](https://cmor.llnl.gov/)), etc.
-Once the project gets to this operational stage,
-as a team we'll need to decide exactly what quality control measures we want to put in place.
+Once there's a clearer picture of what products we'll be producing (and for who),
+as a team we can decide exactly what quality control measures we want to put in place.
 In the meantime,
 we should be on the look out for sub-projects within ACS
 that could start to implement quality control measures to help guide
