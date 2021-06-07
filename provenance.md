@@ -13,9 +13,15 @@ and the OWL standard for storing domain-specific vocabularies (or ontologies).
 
 In recent years, there has been a move towards tracking weather/climate information
 with Semantic Web technology (e.g. [Ma, et al](https://www.nature.com/articles/nclimate2141)).
-The [Global Change Information System](https://data.globalchange.gov/) uses the technology to link together
-all the assessments, reports, and tools produced by the US Global Change Research Program,
-and it has also been used to publish a number of linked datasets, including ACORN-SAT
+For example:
+- The [Global Change Information System](https://data.globalchange.gov/) uses the technology to link together
+all the assessments, reports, and tools produced by the US Global Change Research Program.
+- Data management centres such as the [Biological and Chemical Oceanography Data Management Office](https://www.bco-dmo.org/)
+use the technology to catalogue their data collections
+(e.g. see [SciPy video](https://pyvideo.org/scipy-2020/oceanography-data-ontology-and-the-semantic-web.html)).
+The Research Data Alliance [I-ADOPT Working Group](https://www.rd-alliance.org/groups/interoperable-descriptions-observable-property-terminology-wg-i-adopt-wg)
+has been established to try and merge various existing ontologies into one for describing environmental datasets.  
+- Numerous "linked datasets" havce been published using semantic web technology, including ACORN-SAT
 ([Lefort et al, 2016](http://www.semantic-web-journal.net/content/acorn-sat-linked-climate-dataset-0)). 
 
 More recently,
