@@ -127,7 +127,7 @@ We could do the same for ACS.
 ## Step 4: Quality control
 
 During the initial 6-month showcase phase of ACS,
-we should expect that everyone hosts their code with the ACS GitHub organisation
+we should expect that everyone (who can) hosts their code with the ACS GitHub organisation
 and that a number of ACS scientists put their hand up
 to start incorporating provenance tracking (via command logs) into their ACS workflows.
 Once ACS starts delivering products that are used to make real decisions
