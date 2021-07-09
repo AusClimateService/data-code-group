@@ -22,7 +22,8 @@ use the technology to catalogue their data collections
 The Research Data Alliance [I-ADOPT Working Group](https://www.rd-alliance.org/groups/interoperable-descriptions-observable-property-terminology-wg-i-adopt-wg)
 has been established to try and merge various existing ontologies into one for describing environmental datasets.  
 - Numerous "linked datasets" havce been published using semantic web technology, including ACORN-SAT
-([Lefort et al, 2016](http://www.semantic-web-journal.net/content/acorn-sat-linked-climate-dataset-0)). 
+([Lefort et al, 2016](http://www.semantic-web-journal.net/content/acorn-sat-linked-climate-dataset-0))
+- The OGC has a [white paper](http://docs.ogc.org/wp/19-078r1/19-078r1.html) on using semantic and graph technologies
 
 More recently,
 Semantic Web technology has been used to record the actual data processing steps
