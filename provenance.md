@@ -58,9 +58,10 @@ but presumably one could implement the ontology using [`rdflib`](https://rdflib.
 
 In response to these developments,
 those responsible for the [CF Conventions](http://cfconventions.org/index.html)
-are discussing how these new ideas can be used/incorporated to improve metadata standards
+are considering how these new ideas can be used/incorporated to improve metadata standards
 (e.g. see [these notes](http://cfconventions.org/Meetings/2020-workshop/Metadata-handling-provenance-discussion-notes.pdf)
 from the [2020 CF Workshop](http://cfconventions.org/Meetings/2020-workshop/Metadata-handling-provenance-discussion-notes.pdf)).
 The wider PANGEO community has recently been
-[invited to join the discussion](https://discourse.pangeo.io/t/tracking-provenance-in-xarray/1510).
-
+[invited to join](https://discourse.pangeo.io/t/tracking-provenance-in-xarray/1510)
+the [active discussion](https://github.com/xarray-contrib/cf-xarray/issues/228)
+around integrating semantic web provenance tracking into xarray.   
