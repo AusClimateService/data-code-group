@@ -101,13 +101,16 @@ used to produce a given output (e.g. a journal paper, data product or stakeholde
 The owner of the GitHub repository might change the name of the repo
 (thus breaking the original URL)
 or could even remove the repository altogether.
-The solution is to publish the code with a platform like
-[Zenodo](https://zenodo.org/) or [Figshare](https://figshare.com/),
-which are certified to issue DOIs
+The solution is to publish the code with a platform
+that is certified to issue DOIs
 (you can't get DOI certification unless you guarantee persistent long term access).
+Some institutions have their own platform
+(e.g. the [CSIRO Data Access Portal](https://data.csiro.au/collections/)),
+otherwise [Zenodo](https://zenodo.org/) and [Figshare](https://figshare.com/)
+are two generic (and free) platforms that are widely used by the research community.
 
 Thanks to [GitHub/Zenodo integration](https://guides.github.com/activities/citable-code/),
-the code publication process is very easy.
+the code publication process can be very easy.
 Once you're ready to publish your paper / data product
 you tag a formal version of your GitHub repository,
 and then with the click of a button send that tagged version to Zenodo.
