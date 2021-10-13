@@ -1,28 +1,29 @@
 # Code Roadmap
 
 This discussion paper attempts to descibe how we might go about
-managing the code underpinning the data and information that Project 2 of the
-[Australian Climate Service](https://www.acs.gov.au/) (ACS) produces.
+managing the code underpinning the data and information that comes out of
+Project 2 of the [Australian Climate Service](https://www.acs.gov.au/) (ACS).
+It has been drafted by Work Package 4,
+which has been tasked with monitoring the quality and consistency of the outputs from Work Packages 1-3.
 
 Much of the work in ACS Project 2 will involve taking an authoritative dataset
 (e.g. the original data from a BARRA, BARPA, or CCAM run) and processing it to
-produce data files or images that can be shared with other ACS researchers and/or clients. 
+produce data files or images that are shared with other ACS researchers and/or clients. 
 
-There are essentially two main principles we want to follow
-in relation to processed data/information:
+There are essentially two main principles we want to follow in relation to processed files:
 1. Make the associated code available
 2. Shared code for common tasks
 
 ## 1. Making code available
 
-A `code/` directory associated with a given collection of processed data files (or images)
+The `code/` directory associated with a given collection of processed files
 should include everything needed to reproduce those files.
-This means: 
+This means providing the: 
 1. **Code:** A copy of all the code written/used to produce the files (e.g. python scripts, jupyter notebooks, R files, etc)
 2. **Environment:** Details of the software environment that the code was executed in
 (e.g. a conda `environment.yml` or `requirements.txt` file listing the installed libraries)
 3. **Data processing steps:** Details of how (e.g. in what order) the code was executed to produce each processed file
-(e.g. a Makefile or simple README)
+(e.g. a `Makefile` or `README`)
 
 Provenance information can also be included in the metadata of the processed files,
 so that a record of how they were created exists even if they become separated from
@@ -45,8 +46,12 @@ the code (Appendix 4).
 
 ## 2. Shared code for common tasks
 
-TODO
-
+In some instances the same data processing will be conducted across the ACS Project 2 Work Packages (WPs).
+For instance, an index of extreme fire weather might be calculated using BARRA2 (Work Package 1)
+and CCAM data (Work Package 2).
+In these cases we should try and use the same code to process both datasets.
+Work Package 4 will provide programming support for the development and running
+of shared code for common tasks.
 
 
 ## Appendices
@@ -89,11 +94,10 @@ The new entry also includes a GitHub URL to indicate where to access our script.
 > a Python library called [cmdline-provenance](https://cmdline-provenance.readthedocs.io/en/latest/) 
 > that can be used to simplify the process of creating and updating command logs.
 > There are also associated [lesson materials](https://carpentrieslab.github.io/python-aos-lesson/09-provenance/index.html)
-> for learning how to append and access metadata for different file formats.
+> for learning how to append and access metadata for different data and image file formats.
 >
 > We will continue to update and improve the package and lesson materials to fit the needs of the ACS project
 > and are happy to work with others to help write similar packages in other languages.
-
 
 ### Appendix 2: The ACS GitHub organisation
 
@@ -121,19 +125,28 @@ It also means we have a single place to point to if someone asks where the code 
 
 For those worried about privacy,
 you can make your repositories within the ACS organisation private
-(i.e. only members of the organisation will be able to see them)
-and you can even change your settings so that your membership to the ACS organisation itself 
+(i.e. only members of the organisation will be able to see them).
+You can even change your settings so that your membership to the ACS organisation itself 
 is only visible to other members of the organisation.
-
 
 ### Appendix 3: Code review
 
 There needs to be processes in place to ensure the quality/reliability of the code
-used to produce the processed files produced in ACS Project 2.
+used to produce the processed files in ACS Project 2.
 
-FIXME: Define review process/guidelines.
+Starting out, the review criteria could be as simple as follows:
 
-
+1. Has the code, along with details of the software environment and data processing steps,
+   been archived in an online repository that can be accessed by
+   the target audience (e.g. a public repository in the ACS GitHub organisation)?
+2. Would someone familiar with the programming language/s used be able to re-run the analysis?
+3. Would someone unfamiliar with the programming language/s used be able to broadly understand
+   how the analysis was conducted?
+4. Does the code need to be published with a DOI? (Appendix 4)
+   
+Downstream users of the associated data could conduct the review if appropriate,
+or else Work Package 4 can provide support for code review.
+   
 ### Appendix 4: Publication
 
 Hosting code on GitHub is ideal for collaborative code development,
