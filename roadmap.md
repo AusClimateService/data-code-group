@@ -46,7 +46,7 @@ the code (Appendix 4).
 
 ## 2. Shared code for common tasks
 
-In some instances the same data processing will be conducted across the ACS Project 2 Work Packages (WPs).
+In some instances the same data processing will be conducted across the ACS Project 2 Work Packages.
 For instance, an index of extreme fire weather might be calculated using BARRA2 (Work Package 1)
 and CCAM data (Work Package 2).
 In these cases we should try and use the same code to process both datasets.
