@@ -1,49 +1,60 @@
 # Code Roadmap
 
 This discussion paper attempts to descibe how we might go about
-managing the code that underpins the data and information the
-[Australian Climate Service](https://www.acs.gov.au/) (ACS) makes available to end-users. 
+managing the code underpinning the data and information that Project 2 of the
+[Australian Climate Service](https://www.acs.gov.au/) (ACS) produces.
 
-## Step 1: Get all (or at least most of) our code in one place
+Much of the work in ACS Project 2 will involve taking an authoritative dataset
+(e.g. the original data from a BARRA, BARPA, or CCAM run) and processing it to
+produce data files or images that can be shared with other ACS researchers and/or clients. 
 
-As it currently stands,
-the code associated with ACS is spread across
-many different teams and individuals across a number of institutions.
-While it probably won't be possible to have literally all our code in one place
-(e.g. some code might be primarily used for other projects/collaborations),
-the default should be for all ACS-related code to be hosted within the same GitHub organisation:  
-https://github.com/AusClimateService
+There are essentially two main principles we want to follow
+in relation to processed data/information:
+1. Make the associated code available
+2. Shared code for common tasks
 
-A GitHub organisation is essentially an umbrella under which to host a bunch of related GitHub repositories.
-Having all our code in one place means that we can easily see what each other is working on,
-which will facilitate collaboration and consistency across teams and institutions.
-It also means we have a single place to point to if someone asks where the code is for ACS.
+## 1. Making code available
 
-> **Moving code to a GitHub organisation**
->
-> The process involved in moving code to a GitHub organisation
-> depends on how that code is currently being managed:
-> - If you've got an existing GitHub repository for your ACS-related work,
-> you can transfer that GitHub repository to the new organisation following
-> [these instructions](https://docs.github.com/en/github/administering-a-repository/transferring-a-repository)
-> - If your local git repository isn't up on GitHub yet,
-> you can create a new repository within the ACS organisation
-> and then add that GitHub repository as a remote
-> following [these instructions](https://docs.github.com/en/github/getting-started-with-github/managing-remote-repositories)
+A `code/` directory associated with a given collection of processed data files (or images)
+should include everything needed to reproduce those files.
+This means: 
+1. **Code:** A copy of all the code written/used to produce the files (e.g. python scripts, jupyter notebooks, R files, etc)
+2. **Environment:** Details of the software environment that the code was executed in
+(e.g. a conda `environment.yml` or `requirements.txt` file listing the installed libraries)
+3. **Data processing steps:** Details of how (e.g. in what order) the code was executed to produce each processed file
+(e.g. a Makefile or simple README)
 
-For those worried about privacy,
-you can make your repositories within the ACS organisation private
-(i.e. only members of the organisation will be able to see them)
-and you can even change your settings so that your membership to the ACS organisation itself 
-is only visible to other members of the organisation.
+Provenance information can also be included in the metadata of the processed files,
+so that a record of how they were created exists even if they become separated from
+the associated `code/` directory (see Appendix 1).
 
-## Step 2: Provenance tracking
+Ideally the `code/` directory should be a git repository that is hosted in the
+[ACS GitHub organisation](https://github.com/AusClimateService) (Appendix 2)
+so there's a place that users can submit issues and ask questions about the processed data.
 
-Once we've got our code in one place,
-we need to know how that code was used to produce the products we provide to end-users.
-In other words,
-every data and image file needs to come with a log of all the commands/code
-that were run to produce that file.
+As an example, AGCD data has been processed (see `/g/data/xv83/dbi599/agcd`) and the
+`code/` directory is a git repository hosted at:
+https://github.com/AusClimateService/agcd 
+
+Before processed files are made available to other ACS researchers and/or clients,
+the associated code will need to undergo peer review (Appendix 3).
+
+For some processed files it might be desirable to go one step further and formally publish
+the code (Appendix 4).
+
+
+## 2. Shared code for common tasks
+
+TODO
+
+
+
+## Appendices
+
+### Appendix 1: Provenance tracking
+
+The metadata associated with processed files can be edited to include
+a log of all the commands/code that were run to produce that file.
 
 The simplest way to do this is to follow the lead of the widely-used
 [NCO](http://nco.sourceforge.net/) and [CDO](https://code.mpimet.mpg.de/projects/cdo) command line tools,
@@ -83,17 +94,47 @@ The new entry also includes a GitHub URL to indicate where to access our script.
 > We will continue to update and improve the package and lesson materials to fit the needs of the ACS project
 > and are happy to work with others to help write similar packages in other languages.
 
-While command logs are an adequate solution to provenace tracking for those working closely with project code,
-they are difficult to decipher for most project clients and managers.
-An increasingly popular solution to this issue is the semantic web.
-It can allow for the visualisation of data processing workflows (e.g. [METACLIP](http://www.metaclip.org/))
-and also for searching/querying project metadata.
-There would be a bit of work involved in figuring out precisely how to implement semantic web provenance tracking across the ACS,
-so at the moment this is an idea that is being actively explored but has not yet been committed to.
-There's some extended notes on the topic at
-[provenance.md](https://github.com/AusClimateService/code-roadmap/blob/main/provenance.md).
 
-## Step 3: Publication
+### Appendix 2: The ACS GitHub organisation
+
+While it probably won't be possible to have literally all our code in one place
+(e.g. some code might be primarily used for other projects/collaborations),
+the default should be for all ACS-related code to be hosted within the same GitHub organisation:  
+https://github.com/AusClimateService
+
+A GitHub organisation is essentially an umbrella under which to host a bunch of related GitHub repositories.
+Having all our code in one place means that we can easily see what each other is working on,
+which will facilitate collaboration and consistency across teams and institutions.
+It also means we have a single place to point to if someone asks where the code is for ACS.
+
+> **Moving code to a GitHub organisation**
+>
+> The process involved in moving code to a GitHub organisation
+> depends on how that code is currently being managed:
+> - If you've got an existing GitHub repository for your ACS-related work,
+> you can transfer that GitHub repository to the new organisation following
+> [these instructions](https://docs.github.com/en/github/administering-a-repository/transferring-a-repository)
+> - If your local git repository isn't up on GitHub yet,
+> you can create a new repository within the ACS organisation
+> and then add that GitHub repository as a remote
+> following [these instructions](https://docs.github.com/en/github/getting-started-with-github/managing-remote-repositories)
+
+For those worried about privacy,
+you can make your repositories within the ACS organisation private
+(i.e. only members of the organisation will be able to see them)
+and you can even change your settings so that your membership to the ACS organisation itself 
+is only visible to other members of the organisation.
+
+
+### Appendix 3: Code review
+
+There needs to be processes in place to ensure the quality/reliability of the code
+used to produce the processed files produced in ACS Project 2.
+
+FIXME: Define review process/guidelines.
+
+
+### Appendix 4: Publication
 
 Hosting code on GitHub is ideal for collaborative code development,
 but not for persistent long term storage of the precise version of the code
@@ -126,30 +167,3 @@ We could do the same for ACS.
 > and the details of your software environment along with the code you've written.
 > [Chapter 13.2](https://merely-useful.tech/py-rse/provenance.html#provenance-code)
 > of *Research Software Engineering in Python* explains in detail.
-
-## Step 4: Quality control
-
-During the initial 6-month showcase phase of ACS,
-we should expect that everyone (who can) hosts their code with the ACS GitHub organisation
-and that a number of ACS scientists put their hand up
-to start incorporating provenance tracking (via command logs) into their ACS workflows.
-Once ACS starts delivering products that are used to make real decisions
-(i.e. beyond the initial 6-month period),
-provenance tracking (with Zenodo integration) alone isn't enough.
-There also needs to be processes in place to ensure the quality/reliability of the code we use
-(and the consistency of the metadata associated with the data files we produce).
-Different products might require different levels of quality control
-(e.g. [Harrison et al, 2021](https://doi.org/10.5281/zenodo.4761866)),
-but in general for products that we're producing/reproducing regularly
-(i.e. operationalised as opposed to one-off products)
-we'll need to adopt practices such as
-continuous integration to run unit tests,
-formal code review for all changes to the code base,
-adoption of widely used file conventions
-(e.g. CF-compliance via tools like [CMOR](https://cmor.llnl.gov/)), etc.
-Once there's a clearer picture of what products we'll be producing (and for who),
-as a team we can decide exactly what quality control measures we want to put in place.
-In the meantime,
-we should be on the look out for sub-projects within ACS
-that could start to implement quality control measures to help guide
-our decisions regarding standards to implement across the board.
