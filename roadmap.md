@@ -3,8 +3,9 @@
 This discussion paper attempts to descibe how we might go about
 managing the code underpinning the data and information that comes out of
 Project 2 of the [Australian Climate Service](https://www.acs.gov.au/) (ACS).
-It has been drafted by Work Package 4,
-which has been tasked with monitoring the quality and consistency of the outputs from Work Packages 1-3.
+It has been drafted by the "Storage and Code Group" within Work Package 4,
+which is the package responsible for monitoring the quality and consistency
+of the outputs from Work Packages 1-3.
 
 Much of the work in ACS Project 2 will involve taking an authoritative dataset
 (e.g. the original data from a BARRA, BARPA, or CCAM run) and processing it to
@@ -12,12 +13,12 @@ produce data files or images that are shared with other ACS researchers and/or c
 
 There are essentially two main principles we want to follow in relation to processed files:
 1. Make the associated code available
-2. Shared code for common tasks
+2. Common code for common tasks
 
 ## 1. Making code available
 
-The `code/` directory associated with a given collection of processed files
-should include everything needed to reproduce those files.
+A collection of processed files should have an associated code directory
+(let's call it `code/` for now) that includes everything needed to reproduce those files.
 This means providing the: 
 1. **Code:** A copy of all the code written/used to produce the files (e.g. python scripts, jupyter notebooks, R files, etc)
 2. **Environment:** Details of the software environment that the code was executed in
@@ -29,7 +30,7 @@ Provenance information can also be included in the metadata of the processed fil
 so that a record of how they were created exists even if they become separated from
 the associated `code/` directory (see Appendix 1).
 
-Ideally the `code/` directory should be a git repository that is hosted in the
+Ideally, the `code/` directory should be a git repository that is hosted in the
 [ACS GitHub organisation](https://github.com/AusClimateService) (Appendix 2)
 so there's a place that users can submit issues and ask questions about the processed data.
 
@@ -44,14 +45,14 @@ For some processed files it might be desirable to go one step further and formal
 the code (Appendix 4).
 
 
-## 2. Shared code for common tasks
+## 2. Common code for common tasks
 
 In some instances the same data processing will be conducted across the ACS Project 2 Work Packages.
 For instance, an index of extreme fire weather might be calculated using BARRA2 (Work Package 1)
 and CCAM data (Work Package 2).
 In these cases we should try and use the same code to process both datasets.
-Work Package 4 will provide programming support for the development and running
-of shared code for common tasks.
+The Storage and Code Group will provide programming support for the development and running
+of common code for common tasks.
 
 
 ## Appendices
@@ -145,7 +146,7 @@ Starting out, the review criteria could be as simple as follows:
 4. Does the code need to be published with a DOI? (Appendix 4)
    
 Downstream users of the associated data could conduct the review if appropriate,
-or else Work Package 4 can provide support for code review.
+or else the Storage and Code Group can provide support for code review.
    
 ### Appendix 4: Publication
 
