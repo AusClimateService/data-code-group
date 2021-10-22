@@ -42,14 +42,12 @@ ia39/
 
 xv83/
 ├── projects/
-│   ├── ACS_governance/
-│   ├── ACS_project_1/
-│   ├── ACS_project_2/
-│   │   ├── ACS_work_package_1/
-│   │   ├── ACS_work_package_2/
-│   │   ├── ACS_work_package_3/
-│   │   ├── ACS_work_package_4/
-│   │   └── ACS_work_package_5/
+│   ├── ACS
+│   │   ├── work_package_1/
+│   │   ├── work_package_2/
+│   │   ├── work_package_3/
+│   │   ├── work_package_4/
+│   │   └── work_package_5/
 │   ├── ESCI
 │   │   ├── code/
 │   │   └── data/
