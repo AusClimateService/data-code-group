@@ -13,22 +13,22 @@ Wherever possible, the [CORDEX-CMIP6](https://cordex.org/wp-content/uploads/2021
 in order to facilitate as much consistency between ACS and other state/international regional modelling efforts.
 
 More generally, [CF conventions](https://cfconventions.org/Data/cf-standard-names/77/build/cf-standard-name-table.html) for standard_names,
-and the [Attribute Convention for Data Discovery, ACDD](https://wiki.esipfed.org/Attribute_Convention_for_Data_Discovery_1-3) for metadata attributes, 
+and the [Attribute Convention for Data Discovery (ACDD)](https://wiki.esipfed.org/Attribute_Convention_for_Data_Discovery_1-3) for metadata attributes, 
 will be adopted where appropriate.
 
 #### File formats
 All ACS climate datasets must be formatted in netCDF4, unless required by ACS customers (e.g. CSVs for use in online platforms), 
-with one output variable per dataset. Output variables must should be written using single precision (NC_FLOAT), while coordinates written 
+with one output variable per dataset. Output variables should be written using single precision (NC_FLOAT), with coordinates written 
 using double precision (NC_DOUBLE), according to [CMIP6 requirements](https://docs.google.com/document/d/1os9rZ11U0ajY7F8FWtgU4B49KcB59aFlBVGfLC4ahXs/edit) 
 (and expected CORDEX-CMIP6 requirements).
 
 #### Variables (data request)
-CORDEX-CMIP6 is currently ongoing, with its [data request](https://cordex.org/wp-content/uploads/2021/09/CORDEX_CMIP6_Data_Request_Atmos_v1.xlsx-Atmos.pdf)
+CORDEX-CMIP6 is currently in a late stage of development, with its [data request](https://cordex.org/wp-content/uploads/2021/09/CORDEX_CMIP6_Data_Request_Atmos_v1.xlsx-Atmos.pdf)
 recently undergoing a phase of community comment.
 The [CMIP6 data request](http://clipc-services.ceda.ac.uk/dreq/index.html) will be used as a guide to help complete the ACS data standards.
 
 #### Controlled Vocabulary (CV) & Data Reference System (DRS)
-A CORDEX-CMIP6 CV and DRS are yet to be circulated, but they are expect to be similar to those of [CORDEX-CMIP5](https://is-enes-data.github.io/cordex_archive_specifications.pdf).
+A CORDEX-CMIP6 CV and DRS are yet to be circulated, but they are expected to be similar to those of [CORDEX-CMIP5](https://is-enes-data.github.io/cordex_archive_specifications.pdf).
 The [CMIP6 CV](https://docs.google.com/document/d/1h0r8RZr_f3-8egBMMh7aqLwy3snpD6_MrDz1q8n5XUk/edit) will be referenced where appropriate.
 
 #### Licensing 
