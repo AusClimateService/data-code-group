@@ -42,14 +42,12 @@ ia39/
 
 xv83/
 ├── projects/
-│   ├── ACS_governance/
-│   ├── ACS_project_1/
-│   ├── ACS_project_2/
-│   │   ├── ACS_work_package_1/
-│   │   ├── ACS_work_package_2/
-│   │   ├── ACS_work_package_3/
-│   │   ├── ACS_work_package_4/
-│   │   └── ACS_work_package_5/
+│   ├── ACS
+│   │   ├── work_package_1/
+│   │   ├── work_package_2/
+│   │   ├── work_package_3/
+│   │   ├── work_package_4/
+│   │   └── work_package_5/
 │   ├── ESCI
 │   │   ├── code/
 │   │   └── data/
@@ -100,6 +98,9 @@ A README file that describes the dataset in detail.
 The data in `ia39` isn't published on the [NCI data catalogue](https://geonetwork.nci.org.au),
 but we could require that most of the information required for a catalogue entry
 is included in the README?
+An outline of data standards for ACS, the requirements of a dataset
+to be included in ia39, has been drafted: [ACS data standards](data_standards.md). 
+More information will be added as consultation by the Data & Code Group continues.
 
 ### Replica datasets 
 
