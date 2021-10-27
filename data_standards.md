@@ -34,4 +34,6 @@ The [CMIP6 CV](https://docs.google.com/document/d/1h0r8RZr_f3-8egBMMh7aqLwy3snpD
 #### Licensing 
 ??? to be advised by legal. [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) as standard?
 
+## The Details
 
+#### TO BE PROGRESSED AS ACS PLANNING CONTINUES
