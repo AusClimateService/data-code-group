@@ -2,7 +2,7 @@
 
 Before a collection of files (e.g. data files, images) is shared widely,
 they must be reviewed by the Data and Code Group to ensure compliance
-with our data ([`data_standards.md`](data_standards.md)
+with our data ([`data_standards.md`](data_standards.md))
 and code ([`code_roadmap.md`](code_roadmap.md)) standards.
 
 ## Data review criteria
@@ -18,7 +18,7 @@ For processed files:
 
 ## Code review criteria
 
-For processed (i.e. not authoritative) files:
+For processed files:
 
 1. Has the code, along with details of the software environment and data processing steps,
    been archived in an online repository that can be accessed by
