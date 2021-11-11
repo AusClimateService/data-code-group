@@ -32,7 +32,8 @@ so there's a place that users can submit issues and ask questions about the proc
 At the point that a collection of shared processed files is modified or made available for the first time,
 a [code release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)
 will be tagged in GitHub and if the collection is for public use then that release
-will be published (i.e. to obtain a DOI) to the ACS collection on Zenodo (Appendix 3). 
+will be published (i.e. to obtain a DOI) to the
+[ACS community on Zenodo](https://zenodo.org/communities/ausclimateservice/) (Appendix 3). 
 
 As an example, AGCD data has been processed (see `/g/data/xv83/dbi599/agcd`) and the
 `code/` directory is a git repository hosted at:
@@ -162,7 +163,8 @@ and then with the click of a button send that tagged release to Zenodo.
 The ARC Centre of Excellence for Climate Extremes has created a
 [Zenodo community](https://zenodo.org/communities/arc-coe-clex/)
 to keep all their published code in the one place.
-We will do the same for ACS.
+
+We could do the same at: https://zenodo.org/communities/ausclimateservice/
 
 > **What to publish?**
 > 
