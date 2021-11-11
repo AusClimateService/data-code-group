@@ -3,21 +3,17 @@
 This discussion paper attempts to descibe how we might go about
 managing the code underpinning the data and information that comes out of
 Project 2 of the [Australian Climate Service](https://www.acs.gov.au/) (ACS).
-It has been drafted by the "Storage and Code Group" within Work Package 4,
+It has been drafted by the "Data and Code Group" within Work Package 4,
 which is the package responsible for monitoring the quality and consistency
 of the outputs from Work Packages 1-3.
+
+## Processed files
 
 Much of the work in ACS Project 2 will involve taking an authoritative dataset
 (e.g. the original data from a BARRA, BARPA, or CCAM run) and processing it to
 produce data files or images that are shared with other ACS researchers and/or clients. 
 
-There are essentially two main principles we want to follow in relation to processed files:
-1. Make the associated code available
-2. Common code for common tasks
-
-## 1. Making code available
-
-A collection of processed files should have an associated code directory
+A collection of shared processed files should have an associated code directory
 (let's call it `code/` for now) that includes everything needed to reproduce those files.
 This means providing the: 
 1. **Code:** A copy of all the code written/used to produce the files (e.g. python scripts, jupyter notebooks, R files, etc)
@@ -32,28 +28,44 @@ the associated `code/` directory (see Appendix 1).
 
 Ideally, the `code/` directory should be a git repository that is hosted in the
 [ACS GitHub organisation](https://github.com/AusClimateService) (Appendix 2)
-so there's a place that users can submit issues and ask questions about the processed data.
+so there's a place that users can submit issues and ask questions about the processed files.
+At the point that a collection of shared processed files is modified or made available for the first time,
+a [code release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)
+will be tagged in GitHub and if the collection is for public use then that release
+will be published (i.e. to obtain a DOI) to the ACS collection on Zenodo (Appendix 3). 
 
 As an example, AGCD data has been processed (see `/g/data/xv83/dbi599/agcd`) and the
 `code/` directory is a git repository hosted at:
 https://github.com/AusClimateService/agcd 
 
 Before processed files are made available to other ACS researchers and/or clients,
-the associated code will need to undergo peer review (Appendix 3).
+the files and code will undergo peer review (see [`reivew.md`](review.md))
+to ensure the code and data standards have been followed.
 
-For some processed files it might be desirable to go one step further and formally publish
-the code (Appendix 4).
+## Authoritative data
 
+Unlike a processed dataet, an authoritative dataset is the original/source version.
+For instance, the raw output (or raw with a minimal amount of post-processing)
+from a model run or observing platform.
+It is more challenging to make the associated code and data processing steps available
+(and easily interpretable) for an authoritative dataset
+(e.g. it would be difficult to make the entire BARRA or CCAM codebase available
+with an easy to follow description of how each dataset was created)
+so no definitive code guidelines/requirements for authoritative datasets
+are being proposed at this stage.
 
-## 2. Common code for common tasks
+## Shared code
 
-In some instances the same data processing will be conducted across the ACS Project 2 Work Packages.
-For instance, an index of extreme fire weather might be calculated using BARRA2 (Work Package 1)
-and CCAM data (Work Package 2).
-In these cases we should try and use the same code to process both datasets.
-The Storage and Code Group will provide programming support for the development and running
-of common code for common tasks.
+It is possible that a small library of common code will be hosted
+and maintained by the Data and Code Group
+(e.g. for the calculation of complex hazard indicators, data standard checking, standard plotting style)
+but it is unlikely to be very large or comprehensive.
+In almost all instances individual groups within each Work Package will be doing their
+own code development for data processing. 
 
+We could explore the possibility of more systematic code sharing down the track,
+but for now the focus is simply on getting individual groups comfortable with making
+the details of code, environment and data processing steps available. 
 
 ## Appendices
 
@@ -129,26 +141,8 @@ you can make your repositories within the ACS organisation private
 (i.e. only members of the organisation will be able to see them).
 You can even change your settings so that your membership to the ACS organisation itself 
 is only visible to other members of the organisation.
-
-### Appendix 3: Code review
-
-There needs to be processes in place to ensure the quality/reliability of the code
-used to produce the processed files in ACS Project 2.
-
-Starting out, the review criteria could be as simple as follows:
-
-1. Has the code, along with details of the software environment and data processing steps,
-   been archived in an online repository that can be accessed by
-   the target audience (e.g. a public repository in the ACS GitHub organisation)?
-2. Would someone familiar with the programming language/s used be able to re-run the analysis?
-3. Would someone unfamiliar with the programming language/s used be able to broadly understand
-   how the analysis was conducted?
-4. Does the code need to be published with a DOI? (Appendix 4)
    
-Downstream users of the associated data could conduct the review if appropriate,
-or else the Storage and Code Group can provide support for code review.
-   
-### Appendix 4: Publication
+### Appendix 3: Code publication
 
 Hosting code on GitHub is ideal for collaborative code development,
 but not for persistent long term storage of the precise version of the code
@@ -159,20 +153,16 @@ or could even remove the repository altogether.
 The solution is to publish the code with a platform
 that is certified to issue DOIs
 (you can't get DOI certification unless you guarantee persistent long term access).
-Some institutions have their own platform
-(e.g. the [CSIRO Data Access Portal](https://data.csiro.au/collections/)),
-otherwise [Zenodo](https://zenodo.org/) and [Figshare](https://figshare.com/)
-are two generic (and free) platforms that are widely used by the research community.
 
 Thanks to [GitHub/Zenodo integration](https://guides.github.com/activities/citable-code/),
 the code publication process can be very easy.
-Once you're ready to publish your paper / data product
-you tag a formal version of your GitHub repository,
-and then with the click of a button send that tagged version to Zenodo.
+Once you're ready to share your processed files,
+you tag a formal release of your code on GitHub,
+and then with the click of a button send that tagged release to Zenodo.
 The ARC Centre of Excellence for Climate Extremes has created a
 [Zenodo community](https://zenodo.org/communities/arc-coe-clex/)
 to keep all their published code in the one place.
-We could do the same for ACS.
+We will do the same for ACS.
 
 > **What to publish?**
 > 

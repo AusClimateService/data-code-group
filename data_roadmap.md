@@ -76,7 +76,7 @@ most of the compute allocation for ACS would be associated with `xv83`.
 
 ## Shared data (ia39)
 
-The `ia39` project could be (it is currently unused) a place to share data among researchers working with ACS-related material.
+The `ia39` project is a place to share data among researchers working with ACS-related material.
 For example, this might include a dataset that needs to be used by ACS researchers
 even though it hasn't been formally published yet (e.g. CAFE-f6),
 a reanalysis dataset downloaded and regridded for easy use (e.g. JRA-55),
@@ -99,7 +99,7 @@ The data in `ia39` isn't published on the [NCI data catalogue](https://geonetwor
 but we could require that most of the information required for a catalogue entry
 is included in the README?
 An outline of data standards for ACS, the requirements of a dataset
-to be included in ia39, has been drafted: [ACS data standards](data_standards.md). 
+to be included in ia39, has been drafted: [`data_standards.md`](data_standards.md). 
 More information will be added as consultation by the Data & Code Group continues.
 
 ### Replica datasets 
@@ -129,23 +129,7 @@ While the simple manipulations are likely to only be of use to other researchers
 the complex products might be made available to stakeholders and/or the public. 
 
 **Requirements**:
-Each processed data directory should include a `data/` and `code/` sub directory.
-The code directory should include everything needed to reproduce the data.
-This means: 
-1. **Code:** A copy of all the code written/used to produce the data files (e.g. python scripts, R files, etc)
-2. **Environment:** Details of the software environment that the code was executed in
-(e.g. a conda `environment.yml` or `requirements.txt` file listing the installed libraries)
-3. **Data processing steps:** Details of how (e.g. in what order) the code was executed to produce each data file
-(e.g. a Makefile or simple README)
-
-Ideally the `code/` directory should be a git repository that is hosted in the
-[ACS GitHub organisation](https://github.com/AusClimateService) or
-on [NCI GitLab](https://git.nci.org.au) so there's a place that members
-of `ia39` can submit issues and ask questions about the processed data.
-
-As an example, AGCD data has been processed (see `/g/data/xv83/dbi599/agcd`) and the
-`code` directory is a git repository hosted at:
-https://github.com/AusClimateService/agcd 
+See [`code_roadmap.md`](code_roadmap.md)
 
 ## Public data (pd00)
 
