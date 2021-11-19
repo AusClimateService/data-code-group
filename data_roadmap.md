@@ -39,8 +39,8 @@ mn51/
     ├── ajd548/
     ├── bh0344/
     ├── dxj548/    
-    ├── mtb563/
     ├── jp0715/
+    ├── mtb563/
     ├── nb6195/
     └── sb6007/
 
@@ -88,14 +88,14 @@ to 'shared data' (`ia39`) to 'public data' (`pd00`; placeholder name because it 
 
 ## Working space (xv83)
 
-CSIRO Researchers and small teams can essentially do what they like in their own `users` or `projects` directory on `xv83`.
+CSIRO researchers and small teams can essentially do what they like in their own `users` or `projects` directory on `xv83`.
 Access to `xv83` would be restricted to ACS researchers and
 most of the compute allocation for ACS would be associated with `xv83`.
 
 
 ## Working space (mn51)
 
-Bureau Researchers and small teams can essentially do what they like in their own `users` or `projects` directory on `mn51`.
+Bureau researchers and small teams can essentially do what they like in their own `users` or `projects` directory on `mn51`.
 Access to `mn51` would be restricted to ACS researchers and
 most of the compute allocation for ACS would be associated with `mn51`.
 
