@@ -1,11 +1,49 @@
 Many ACS researchers working at CSIRO will be able to store data and code in ACS-related projects on NCI
-(`xv83` and `ia39` at the moment).
+(`xv83` and `ia39` at the moment). A similar project has been established for Bureau researchers (`mn51`)
 This document contains initial/draft thoughts on how we might manage those spaces.
 To start the conversation,
 here's a representation of how things might be organised,
 using (mostly) the existing content in `xv83` as an example:
 
 ```
+xv83/
+├── projects/
+│   ├── ACS
+│   │   ├── work_package_1/
+│   │   ├── work_package_2/
+│   │   ├── work_package_3/
+│   │   ├── work_package_4/
+│   │   └── work_package_5/
+│   ├── ESCI
+│   │   ├── code/
+│   │   └── data/
+└── users/
+    ├── bxn599/
+    ├── cm2704/
+    ├── dbi599/
+    ├── dr6273/
+    ├── ds0092/
+    ├── kd7073/
+    ├── mxt599/
+    └── tm4888/
+
+mn51/
+├── projects/
+│   ├── ACS
+│   │   ├── work_package_1/
+│   │   ├── work_package_2/
+│   │   ├── work_package_3/
+│   │   ├── work_package_4/
+│   │   └── work_package_5/
+└── users/
+    ├── ajd548/
+    ├── bh0344/
+    ├── dxj548/    
+    ├── mtb563/
+    ├── jp0715/
+    ├── nb6195/
+    └── sb6007/
+
 ia39/
 ├── admin/
 ├── AWAP/
@@ -40,39 +78,26 @@ ia39/
         ├── code/ 
         └── data/
 
-xv83/
-├── projects/
-│   ├── ACS
-│   │   ├── work_package_1/
-│   │   ├── work_package_2/
-│   │   ├── work_package_3/
-│   │   ├── work_package_4/
-│   │   └── work_package_5/
-│   ├── ESCI
-│   │   ├── code/
-│   │   └── data/
-└── users/
-    ├── bxn599/
-    ├── cm2704/
-    ├── dbi599/
-    ├── dr6273/
-    ├── ds0092/
-    ├── kd7073/
-    ├── mxt599/
-    └── tm4888/
-
 pd00/
 ├── dataset1/
 └── dataset2/
 ```
-What's described above is essentially a three level strucure that goes from 'working space' (`xv83`)
+
+What's described above is essentially a three level strucure that goes from 'working space' (`xv83` or `mn51`)
 to 'shared data' (`ia39`) to 'public data' (`pd00`; placeholder name because it doesn't exist yet).
 
 ## Working space (xv83)
 
-Researchers and small teams can essentially do what they like in their own `users` or `projects` directory on `xv83`.
+CSIRO Researchers and small teams can essentially do what they like in their own `users` or `projects` directory on `xv83`.
 Access to `xv83` would be restricted to ACS researchers and
 most of the compute allocation for ACS would be associated with `xv83`.
+
+
+## Working space (mn51)
+
+Bureau Researchers and small teams can essentially do what they like in their own `users` or `projects` directory on `mn51`.
+Access to `mn51` would be restricted to ACS researchers and
+most of the compute allocation for ACS would be associated with `mn51`.
 
 ## Shared data (ia39)
 
