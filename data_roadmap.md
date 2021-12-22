@@ -1,6 +1,7 @@
-Many ACS researchers working at CSIRO will be able to store data and code in ACS-related projects on NCI
-(`xv83` and `ia39` at the moment). A similar project has been established for Bureau researchers (`mn51`)
-This document contains initial/draft thoughts on how we might manage those spaces.
+Many ACS researchers working at CSIRO will be able to store data and code
+in ACS-related projects on NCI (`xv83` and `ia39` at the moment).
+A similar project has been established for Bureau researchers (`mn51`).
+This document contains our current plans for managing those spaces.
 To start the conversation,
 here's a representation of how things might be organised,
 using (mostly) the existing content in `xv83` as an example:
@@ -84,20 +85,14 @@ pd00/
 ```
 
 What's described above is essentially a three level strucure that goes from 'working space' (`xv83` or `mn51`)
-to 'shared data' (`ia39`) to 'public data' (`pd00`; placeholder name because it doesn't exist yet).
+to 'shared data' (`ia39`) to 'public data' (`pd00`; placeholder name because these projects doesn't exist yet).
 
-## Working space (xv83)
+## Working space (xv83 and mn51)
 
-CSIRO researchers and small teams can essentially do what they like in their own `users` or `projects` directory on `xv83`.
-Access to `xv83` would be restricted to ACS researchers and
-most of the compute allocation for ACS would be associated with `xv83`.
-
-
-## Working space (mn51)
-
-Bureau researchers and small teams can essentially do what they like in their own `users` or `projects` directory on `mn51`.
-Access to `mn51` would be restricted to ACS researchers and
-most of the compute allocation for ACS would be associated with `mn51`.
+CSIRO (`xv83`) and Bureau (`mn51`) researchers and small teams can essentially do what they like 
+in their own `users` or `projects` directory on `xv83`/`mn51`.
+Access is restricted to ACS researchers and
+most of the compute allocation for ACS would be associated with these projects.
 
 ## Shared data (ia39)
 
@@ -134,12 +129,13 @@ Many analyses conducted for the ACS will involve authoritative datasets
 that aren't already available on NCI (e.g. a global reanalysis).
 If there isn't a natural home elsewhere on NCI,
 it may be necessary to download a (partial or complete) replica
-of such a dataset and store it in `ia39`.
+of such a dataset and store it in `ia39`
+as part of the [NCI Reference Climate Dataset Collection](https://github.com/nci-ref-clim-data).
 
 **Requirements**:
-A README file explaining when, how and what was downloaded from the authoritative source,
-the maintenance plan (i.e. is this replica static or is it being regularly updated and how),
-and links to dataset documentation. 
+There's a [wiki page](https://github.com/nci-ref-clim-data/nci-ref-clim-data/wiki/Documentation)
+that describes the documentation requirements for a dataset to be part of the
+NCI Reference Climate Dataset Collection.
 
 ### Post processed data  
 
@@ -154,20 +150,20 @@ While the simple manipulations are likely to only be of use to other researchers
 the complex products might be made available to stakeholders and/or the public. 
 
 **Requirements**:
-See [`code_roadmap.md`](code_roadmap.md)
+See [`code_roadmap.md`](code_roadmap.md).
 
 ## Public data (pd00)
 
-The `pd00` project would be the official ACS
-[data collection](https://opus.nci.org.au/display/NDP/NCI+Data+Collections+and+Publishing)
-under which all our publicly available data would sit.
-Each dataset would also have an entry in the
-[CSIRO Data Access Portal](https://data.csiro.au/collections).
+`pd00` projects (we will probably end up with more than one) would be official NCI
+[data collections](https://opus.nci.org.au/display/NDP/NCI+Data+Collections+and+Publishing).
 
 A listing on the [NCI data catalogue](https://geonetwork.nci.org.au) requires the authors to provide
 a bunch of detail about the dataset (data description, contact information, license, etc)
 for the public catalogue entry.
 Upon publication the dataset is issued with a DOI.
+
+These datasets might also have an entry in the
+[CSIRO Data Access Portal](https://data.csiro.au/collections).
 
 If the dataset has undergone significant post-processing
 then the same code, environment and data processing
