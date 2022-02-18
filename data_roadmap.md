@@ -1,6 +1,7 @@
 Many ACS researchers working at CSIRO will be able to store data and code
 in ACS-related projects on NCI (`xv83` and `ia39` at the moment).
-A similar project has been established for Bureau researchers (`mn51`).
+Similar projects have been established for Bureau researchers
+(`mn51` for general analysis, `tp28`/`hd50` for BARPA/BARRA compute and raw data storage).
 This document contains our current plans for managing those spaces.
 To start the conversation,
 here's a representation of how things might be organised,
@@ -84,15 +85,24 @@ pd00/
 └── dataset2/
 ```
 
-What's described above is essentially a three level strucure that goes from 'working space' (`xv83` or `mn51`)
-to 'shared data' (`ia39`) to 'public data' (`pd00`; placeholder name because these projects doesn't exist yet).
+What's described above is essentially a three level strucure:
+- Level 1: 'working space' (`xv83` or `mn51`) and 'modelling space' (`tp28` and `hd50`)
+- Level 2: 'shared data' (`ia39`)
+- Level 3: 'public data' (`pd00`; placeholder name because these projects doesn't exist yet).
 
 ## Working space (xv83 and mn51)
 
 CSIRO (`xv83`) and Bureau (`mn51`) researchers and small teams can essentially do what they like 
 in their own `users` or `projects` directory on `xv83`/`mn51`.
 Access is restricted to ACS researchers and
-most of the compute allocation for ACS would be associated with these projects.
+most of the general compute allocation for ACS would be associated with these projects.
+In other words,
+these spaces are for general data processing and analysis.
+
+## Modelling space (tp28 and hd50)
+
+The compute and storage (of raw model output) allocations for
+BARPA and BARRA are associated with `tp28` and `hd50` respectively.
 
 ## Shared data (ia39)
 
