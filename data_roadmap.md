@@ -140,7 +140,7 @@ that aren't already available on NCI (e.g. a global reanalysis).
 If there isn't a natural home elsewhere on NCI,
 it may be necessary to download a (partial or complete) replica
 of such a dataset and store it in `ia39`
-as part of the [NCI Reference Climate Dataset Collection](https://github.com/nci-ref-clim-data).
+as part of the [NCI Reference Climate Dataset Collection](https://github.com/aus-ref-clim-data-nci).
 
 **Requirements**:
 There's a [wiki page](https://github.com/nci-ref-clim-data/nci-ref-clim-data/wiki/Documentation)
