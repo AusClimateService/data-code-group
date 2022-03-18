@@ -24,6 +24,7 @@ Current active members:
 - Marcus Thatcher
 - Dougie Squire
 - Ben Schroeter
+- François Delage
 
 ### Consultation list
 
