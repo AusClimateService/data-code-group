@@ -8,7 +8,7 @@ and to coordinate the associated infrastructure, support and reporting to manage
 
 The group meets once a month via Microsoft Teams (see `minutes/` and `agenda.md`) and
 chats on that platform between meetings
-(reach out to damien.irving@csiro.au if you'd like access to the chat).
+(reach out to damien.irving@csiro.au if you'd like access to the chat and/or invites to meetings).
 Action items are managed via [tagged issues](https://github.com/AusClimateService/data-code-group/issues?q=is%3Aissue+is%3Aopen+label%3A%22action+item%22).
 
 ### Documentation
