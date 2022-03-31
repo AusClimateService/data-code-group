@@ -35,7 +35,7 @@ will be tagged in GitHub and if the collection is for public use then that relea
 will be published (i.e. to obtain a DOI) to the
 [ACS community on Zenodo](https://zenodo.org/communities/ausclimateservice/) (Appendix 3). 
 
-As an example, AGCD data has been processed (see `/g/data/xv83/dbi599/agcd`) and the
+As an example, AGCD data has been processed (see `/g/data/ia39/agcd/post-processed/`) and the
 `code/` directory is a git repository hosted at:
 https://github.com/AusClimateService/agcd 
 
