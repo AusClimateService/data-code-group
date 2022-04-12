@@ -7,3 +7,5 @@
 - ia39 structure roadmap, and a CORDEX-like DRS strategy (Chloe)
 
 - ESCI source-of-truth datasets (Chloe)
+
+- ua6 backup into xv83 (quotas, sorting) (Claire)
