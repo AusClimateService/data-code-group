@@ -9,3 +9,6 @@
 - ESCI source-of-truth datasets (Chloe)
 
 - ua6 backup into xv83 (quotas, sorting) (Claire)
+
+- options for licensing code/software developed as part of ACS (Mitchell)
+
