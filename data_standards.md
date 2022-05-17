@@ -9,7 +9,7 @@ Specifically, these standards will apply to any climate datasets to be included 
 following the [ACS data roadmap](data_roadmap.md).  
 Authoritative ACS datasets must be CMORised; i.e. post-processed through a standardised and version controlled 
 data pipeline to meet CORDEX-level compliance standards, and formatted into a documented directory and filename structure (DRS).
-CMORisation pipeline tools must adhere to the ACS [`code_roadmap.md`](code_roadmap.md)..
+CMORisation pipeline tools must adhere to the ACS [`code_roadmap.md`](code_roadmap.md).
 
 #### Adopted standards & metadata conventions
 Wherever possible, the [CORDEX-CMIP6](https://cordex.org/wp-content/uploads/2021/05/CORDEX-CMIP6_exp_design_RCM.pdf) and CMIP6 data standards will be adopted, 
