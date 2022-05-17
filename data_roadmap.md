@@ -1,110 +1,32 @@
+# ACS Data Roadmap
+
 Many ACS researchers working at CSIRO will be able to store data and code
-in ACS-related projects on NCI (`xv83` and `ia39` at the moment).
+in ACS-related projects on NCI (`xv83` and `ia39`).
 Similar projects have been established for Bureau researchers
 (`mn51` for general analysis, `tp28`/`hd50` for BARPA/BARRA compute and raw data storage).
 This document contains our current plans for managing those spaces.
-To start the conversation,
-here's a representation of how things might be organised,
-using (mostly) the existing content in `xv83` as an example:
 
-```
-xv83/
-├── projects/
-│   ├── ACS
-│   │   ├── work_package_1/
-│   │   ├── work_package_2/
-│   │   ├── work_package_3/
-│   │   ├── work_package_4/
-│   │   └── work_package_5/
-│   ├── ESCI
-│   │   ├── code/
-│   │   └── data/
-└── users/
-    ├── bxn599/
-    ├── cm2704/
-    ├── dbi599/
-    ├── dr6273/
-    ├── ds0092/
-    ├── kd7073/
-    ├── mxt599/
-    └── tm4888/
+We define here a three level strucure of ACS projects on NCI:
+- Level A: 'working space' (`xv83` or `mn51`) and 'modelling space' (`tp28` and `hd50`)
+- Level B: 'shared data' (`ia39`)
+- Level C: 'public data' (TBD; e.g. `pd00`).
 
-mn51/
-├── projects/
-│   ├── ACS
-│   │   ├── work_package_1/
-│   │   ├── work_package_2/
-│   │   ├── work_package_3/
-│   │   ├── work_package_4/
-│   │   └── work_package_5/
-└── users/
-    ├── ajd548/
-    ├── bh0344/
-    ├── dxj548/    
-    ├── jp0715/
-    ├── mtb563/
-    ├── nb6195/
-    └── sb6007/
+## Level A spaces
+### Working space (xv83 and mn51)
 
-ia39/
-├── admin/
-├── AWAP/
-│   ├── post-processed/
-│   │   ├── code/
-│   │   └── data/
-├── CAFE60v1/
-│   ├── authoritative/
-│   │   ├── README
-│   │   ├── code/
-│   │   └── data/
-├── CAFE-f5/
-│   ├── authoritative/
-│   │   ├── README
-│   │   ├── code/
-│   │   └── data/
-├── CAFE-f6/
-│   ├── authoritative/
-│   │   ├── README
-│   │   ├── code/
-│   │   └── data/
-├── CCI_fire/
-│   ├── replica/
-│   │   ├── README
-│   │   └── *.nc
-├── HadISST/
-│   ├── post-processed/
-│   │   ├── code/
-│   │   └── data/
-└── JRA-55/
-    └── post-processed/
-        ├── code/ 
-        └── data/
+CSIRO (`xv83`) and Bureau (`mn51`) researchers and small teams can essentially 
+do what they like in their own `users` or `projects` directory on `xv83`/`mn51`.
+Access is restricted to ACS researchers and most of the general compute 
+allocation for ACS would be associated with these projects.
+In other words, these spaces are for general data processing and analysis.
 
-pd00/
-├── dataset1/
-└── dataset2/
-```
-
-What's described above is essentially a three level strucure:
-- Level 1: 'working space' (`xv83` or `mn51`) and 'modelling space' (`tp28` and `hd50`)
-- Level 2: 'shared data' (`ia39`)
-- Level 3: 'public data' (`pd00`; placeholder name because these projects doesn't exist yet).
-
-## Working space (xv83 and mn51)
-
-CSIRO (`xv83`) and Bureau (`mn51`) researchers and small teams can essentially do what they like 
-in their own `users` or `projects` directory on `xv83`/`mn51`.
-Access is restricted to ACS researchers and
-most of the general compute allocation for ACS would be associated with these projects.
-In other words,
-these spaces are for general data processing and analysis.
-
-## Modelling space (tp28 and hd50)
+### Modelling space (tp28 and hd50)
 
 The compute and storage (of raw model output) allocations for
 BARPA and BARRA are associated with `tp28` and `hd50` respectively.
 
-## Shared data (ia39)
+## Level B spaces
+### Shared data (ia39)
 
 The `ia39` project is a place to share data among researchers working with ACS-related material.
 For example, this might include a dataset that needs to be used by ACS researchers
@@ -113,24 +35,27 @@ a reanalysis dataset downloaded and regridded for easy use (e.g. JRA-55),
 or processed data that needs to be shared.
 Given the broader audience using the data,
 there needs to be some standards and guidelines to ensure usability,
-transparency and reproducibility.
+transparency and reproducibility.  
+
 These standards differ depending on the type of dataset: 
 
 ### Authoritative datasets
 
 **Description**:
 An authoritative dataset is the original/source version of a dataset.
-For instance, the raw output (or raw with a minimal amount of post-processing)
-from a model run or observing platform.
+For instance, the CMORised output from a model run, bias-correction process, or observing platform.
+Authoritative datasets will have the highest contraints applied with respect to standardisation and documentation.
 
 **Requirements**:
 A README file that describes the dataset in detail.
 The data in `ia39` isn't published on the [NCI data catalogue](https://geonetwork.nci.org.au),
 but we could require that most of the information required for a catalogue entry
-is included in the README?
+is included in the README.
 An outline of data standards for ACS, the requirements of a dataset
-to be included in ia39, has been drafted: [`data_standards.md`](data_standards.md). 
-More information will be added as consultation by the Data & Code Group continues.
+to be included in ia39, has been drafted: [`data_standards.md`](data_standards.md).   
+This data **must** be CMORised; i.e. post-processed through a standardised and version controlled 
+data pipeline to meet CORDEX-level compliance standards, 
+and formatted into a documented directory and filename structure (DRS).
 
 ### Replica datasets 
 
@@ -147,12 +72,12 @@ There's a [wiki page](https://github.com/nci-ref-clim-data/nci-ref-clim-data/wik
 that describes the documentation requirements for a dataset to be part of the
 NCI Reference Climate Dataset Collection.
 
-### Post processed data  
+### Processed data  
 
 **Description**:
 While it isn't always necessary to store and share processed data
 (because if you make the code and raw/original data available the processed data can be recreated),
-it many cases it can be useful.
+it many cases it can be useful.  
 Examples of shared processed data might be simple manipulations of authoritative datasets
 to achieve a desired grid resolution, temporal frequency or file format,
 through to more complex processing to calculate a statistical quantity or climate diagnostic.
@@ -162,7 +87,70 @@ the complex products might be made available to stakeholders and/or the public.
 **Requirements**:
 See [`code_roadmap.md`](code_roadmap.md).
 
-## Public data (pd00)
+### ia39 structure 
+Below is the proposed structure of ia39:
+
+```
+ia39/
+├── admin/
+├── aus-ref-clim-data-nci
+|   ├── AWAP/
+│   |   ├── post-processed/
+│   │   |   ├── code/
+│   │   |   └── data/
+|   ├── CCI_fire/
+|   │   ├── replica/
+|   │   │   ├── README
+|   │   │   └── *.nc
+|   ├── HadISST/
+|   │   ├── post-processed/
+|   │   │   ├── code/
+|   │   │   └── data/
+|   ├── JRA-55/
+|   |   ├── post-processed/
+|   |   |   ├── code/ 
+|   └   └   └── data/
+├── CAFE
+|   ├── CAFE60v1/
+|   │   ├── replica/
+|   │   │   ├── README
+|   │   │   ├── code/
+|   │   │   └── data/
+|   ├── CAFE-f5/
+|   │   ├── authoritative/
+|   │   │   ├── README
+|   │   │   ├── code/
+|   │   │   └── data/
+|   ├── CAFE-f6/
+|   │   ├── authoritative/
+|   │   │   ├── README
+|   │   │   ├── code/
+|   └   └   └── data/
+├── ESCI
+|   ├── README
+|   ├── output/
+|   ├── bias-adjusted-output/
+|   ├── verification/
+|   ├── derived_indices/
+│   └   └── See ACS DRS
+├── CORDEX
+|   ├── README
+|   ├── output/
+|   ├── bias-adjusted-output/
+|   ├── verification/
+|   ├── derived_indices/
+│   └   └── See ACS DRS
+├── Fine-scale
+|   ├── README
+|   ├── output/
+|   ├── bias-adjusted-output/
+|   ├── verification/
+|   ├── derived_indices/
+│   └   └── See ACS DRS
+```
+
+## Level C spaces
+### Public data (pd00)
 
 `pd00` projects (we will probably end up with more than one) would be official NCI
 [data collections](https://opus.nci.org.au/display/NDP/NCI+Data+Collections+and+Publishing).
