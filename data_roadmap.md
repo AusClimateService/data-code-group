@@ -55,7 +55,8 @@ An outline of data standards for ACS, the requirements of a dataset
 to be included in ia39, has been drafted: [`data_standards.md`](data_standards.md).   
 This data **must** be CMORised; i.e. post-processed through a standardised and version controlled 
 data pipeline to meet CORDEX-level compliance standards, 
-and formatted into a documented directory and filename structure (DRS).
+and formatted into a documented directory and filename structure (DRS).  
+CMORisation pipeline tools must adhere to the ACS [`code_roadmap.md`](code_roadmap.md).
 
 ### Replica datasets 
 
