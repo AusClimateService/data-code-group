@@ -5,8 +5,8 @@ The Australian Climate Service will produce a huge array of outputs, including a
 This document is to set data standards that will apply across the various Work Packages in ACS Project 2, 
 to ensure that data produced by ACS and shared among the climate community is both consistent, and meets the FAIR principles of data management.
 
-Specifically, these standards will apply to any climate datasets to be inlcuded in the ACS Shared Data space, NCI project ia39, 
-following the [ACS data roadmap](data_roadmap.md).
+Specifically, these standards will apply to any climate datasets to be included in the ACS Shared Data space, NCI project ia39, 
+following the [ACS data roadmap](data_roadmap.md).  
 Authoritative ACS datasets must be CMORised; i.e. post-processed through a standardised and version controlled 
 data pipeline to meet CORDEX-level compliance standards, and formatted into a documented directory and filename structure (DRS).
 CMORisation pipeline tools must adhere to the ACS [`code_roadmap.md`](code_roadmap.md)..
