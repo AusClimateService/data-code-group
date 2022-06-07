@@ -16,3 +16,8 @@
   - ACS governed
   - Data-planning issue / practicality limitations
 
+- Resolutions of some RCMs do not align with CORDEX DRS
+  - ACS governed
+  - Not sure where origin lies.
+  - BARPA is 17km, CCAM-Qld is 10km, neither of which as CORDEX Domain?
+
