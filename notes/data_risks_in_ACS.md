@@ -21,3 +21,7 @@
   - Not sure where origin lies.
   - BARPA is 17km, CCAM-Qld is 10km, neither of which as CORDEX Domain?
 
+- Scratch purging on NCI
+  - NCI governed
+  - Modification time instead of access time? 
+  - Known issues due to purging?
