@@ -3,6 +3,8 @@
 - CMIP6 downloading into oi10:
   - NCI governed
   - Communication/planning issue?
+  - Download requests not being filled in a timely manner, or correctly (missing data), and a lack of updates about such requests.
+  - Regular downloads of high-demand variables were shut off? This caused issues for GCM-ensemble analysis as newer data were not automatically replicated.
 
 - 3 month delays on NCI project quota changes:
   - NCI governed
