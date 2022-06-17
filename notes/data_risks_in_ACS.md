@@ -27,3 +27,8 @@
   - NCI governed
   - Modification time instead of access time? 
   - Known issues due to purging?
+
+- RDP incomplete for ACS (Research Data Planner)
+  - CSIRO governed
+  - Only impacts CSIRO-lead projects but scope for RDP is difficult
+  - Some efforts have been made, is it a problem that it is only preliminary?
