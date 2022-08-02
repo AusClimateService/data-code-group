@@ -35,8 +35,35 @@ A CORDEX-CMIP6 CV and DRS are yet to be circulated, but they are expected to be 
 The [CMIP6 CV](https://docs.google.com/document/d/1h0r8RZr_f3-8egBMMh7aqLwy3snpD6_MrDz1q8n5XUk/edit) will be referenced where appropriate.
 
 #### Licensing 
-??? to be advised by legal. [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) as standard?
+To be advised by ACS Data Governance WG. [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) as standard?
 
-## The Details
+## DRSs
 
-#### TO BE PROGRESSED AS ACS PLANNING CONTINUES
+### CORDEX-CMIP6
+*Adopted from [CORDEX-CMIP5 archive specifications](http://is-enes-data.github.io/cordex_archive_specifications.pdf).*
+
+**Directory structure:** \<activity\>/\<product\>/\<domain\>/\<RCM-institution\>/\<GCM-model-name\>/\<CMIP6-experiment-name\>/\<CMIP6-ensemble-member\>/\<RCM-model-name\>/\<RCM-version-ID\>/\<frequency-or-category\>/\<variableName>
+
+**Filenames:** variable-name_domain_GCM-model-name_CMIP6-experiment-name_CMIP6-ensemble-member_RCM-model-name_RCM-version-id_frequency[\_StartTime-EndTime].nc
+  
+**Controlled Vocabulary:**  
+activity = { CORDEX-CMIP6 }  
+product = { output, bias-adjusted-output, indices, bias-adjusted-indices }  
+domain = { AUS-11i, AUS-17i, ??? }
+RCM-institution = { BOM, CSIRO, QLD-DES?, ??? }  
+GCM-model-name = { refer to [CMIP6 CV](https://github.com/WCRP-CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json) ; format=institution_id-source_id, e.g. CSIRO-ARCCS-ACCESS-CM2, etc. }  
+CMIP6-experiment-name = { historical, ssp126, ssp245, ssp370, ssp585, evaluation \[ERA5\] }  
+CMIP6-ensemble-member = { e.g. r6i1p1f1 }  
+RCM-model-name = { CCAM-????, BARPA-R, CCAM-Qld }  
+RCM-version-id = { ??? }  
+frequency-or-category = {  
+- { output, bias-corrected-output: mon, day, 6hr, 3hr, 1hr }  
+- { indices, bias-corrected-indices: climdex, gev, fire, heat, coasts, trop-cyclones, ... }    
+variable-name = {  
+- { output: see [CORDEX-CMIP6 Atmosphere Variable List](https://docs.google.com/spreadsheets/d/1qUauozwXkq7r1g-L4ALMIkCNINIhhCPx/edit#gid=1672965248) }  
+- { bias-adjusted-output: add 'Adjust' to end of output variable-name ; e.g. pr -> prAdjust ; see [](http://is-enes-data.github.io/CORDEX_adjust_drs.pdf) }  
+- { indices: cdd, ...??? }  
+- { bias-adjusted-indices: add 'Adjust' to end of output variable-name ; e.g. cdd -> cddAdjust }  
+
+### ESCI
+*Adopted from [CORDEX-CMIP5 archive specifications](http://is-enes-data.github.io/cordex_archive_specifications.pdf).*
