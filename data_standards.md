@@ -52,19 +52,44 @@ To be advised by ACS Data Governance WG. [CC BY-SA 4.0](https://creativecommons.
   
 #### Controlled Vocabulary:
 
-| **key** = | [*restriction*:] { csv_items }  |
+| **key** = | [*restriction*:] { item1 item2 ... }  |
 | ------------ | ------------ | 
 | **activity** | { CORDEX-CMIP6 }  |
-| **product** | { output, bias-adjusted-output, indices, bias-adjusted-indices }  |
-| **domain** | { AUS-11i, AUS-17i, ??? }  |
-|  **RCM-institution** | { BOM, CSIRO, QLD-DES?, ??? }  |
-|**GCM-model-name** | refer to [CMIP6 CV](https://github.com/WCRP-CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json) ; format=institution_id-source_id, e.g. CSIRO-ARCCS-ACCESS-CM2, etc.  |
-| **CMIP6-experiment-name** | *CMIP6*: { historical, ssp126, ssp245, ssp370, ssp585 } <br/> *ERA5*: { evaluation }  |
-| **CMIP6-ensemble-member** | { r1?i?p?f? (e.g. r6i1p1f1) } |
-| **RCM-model-name** | { CCAM-????, BARPA-R, CCAM-Qld }  |
+| **product** | { output bias-adjusted-output indices bias-adjusted-indices }  |
+| **domain** | { AUS-11i AUS-17i ??? }  |
+|  **RCM-institution** | { BOM CSIRO QLD-DES? ??? }  |
+|**GCM-model-name** | refer to [CMIP6 CV](https://github.com/WCRP-CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json); format=institution_id-source_id (e.g. CSIRO-ARCCS-ACCESS-CM2) |
+| **CMIP6-experiment-name** | *CMIP6*: { historical ssp126 ssp245 ssp370 ssp585 } <br/> *ERA5*: { evaluation }  |
+| **CMIP6-ensemble-member** | { r?i?p?f? (e.g. r6i1p1f1) } |
+| **RCM-model-name** | { CCAM-???? BARPA-R CCAM-Qld }  |
 | **RCM-version-id** | { ??? }  |
-| **frequency-or-category** | *output, bias-corrected-output*: { mon, day, 6hr, 3hr, 1hr } <br/> *indices, bias-corrected-indices*: { climdex, gev, fire, heat, coasts, trop-cyclones, ... } |
-| **variable-name** | *output*: see [CORDEX-CMIP6 Atmosphere Variable List](https://docs.google.com/spreadsheets/d/1qUauozwXkq7r1g-L4ALMIkCNINIhhCPx/edit#gid=1672965248) <br/> *bias-adjusted-output*: add 'Adjust' to end of output variable-name (e.g. pr -> prAdjust); see [CORDEX-Adjust DRS](http://is-enes-data.github.io/CORDEX_adjust_drs.pdf) } <br/> *indices*: { cdd, cwd, fd, r10mm, r95ptot, rx1day, txn, txx, ... }  <br/> *bias-adjusted-indices*: add 'Adjust' to end of output variable-name (e.g. cdd -> cddAdjust) |
+| **frequency-or-category** | *output, bias-corrected-output*: { mon day 6hr 3hr 1hr } <br/> *indices, bias-corrected-indices*: { climdex gev fire heat coasts trop-cyclones ... } |
+| **variable-name** | *output*: see [CORDEX-CMIP6 Atmosphere Variable List](https://docs.google.com/spreadsheets/d/1qUauozwXkq7r1g-L4ALMIkCNINIhhCPx/edit#gid=1672965248) <br/> *indices*: { cdd cwd fd r10mm r95ptot rx1day txn txx ... } <br/> *bias-adjusted-output, bias-adjusted-indices*: add 'Adjust' to end of output variable-name (e.g. pr -> prAdjust); see [CORDEX-Adjust DRS](http://is-enes-data.github.io/CORDEX_adjust_drs.pdf) |
 
 ### ESCI
-*Adopted from [CORDEX-CMIP5 archive specifications](http://is-enes-data.github.io/cordex_archive_specifications.pdf).*
+*Adopted from [CORDEX-CMIP5 archive specifications](http://is-enes-data.github.io/cordex_archive_specifications.pdf).*  
+See https://github.com/AusClimateService/ESCI-data-collection
+
+#### Directory structure:  
+
+\<**activity**\>/\<**product**\>/\<**domain**\>//\<**GCM-model-name**\>/\<**CMIP5-experiment-name**\>/\<**CMIP5-ensemble-member**\>/\<**RCM-model-name**\>/\<**RCM-version-ID**\>/\<**frequency**\>/\<**variable-name**>
+
+#### Filenaming:  
+
+\<**variable-name**\>\_\<**domain**\>\_\<**GCM-model-name**\>\_\<**CMIP5-experiment-name**\>\_\<**CMIP5-ensemble-member**\>\_\<**RCM-institute-and-model-name**\>\_\<**RCM-version-id**\>\_\<**frequency**\>[\_\<**StartTime-EndTime**\>].nc
+  
+#### Controlled Vocabulary:
+
+| **key** = | [*restriction*:] { item1 item2 ... }  |
+| ------------ | ------------ | 
+| **activity** | { ESCI }  |
+| **product** | { output bias-adjusted-output }  |
+| **domain** | { AUS-ESCI AUS-ESCI-noWA }  |
+|**GCM-model-name** | { CSIRO-BOM-ACCESS1-0 CCCMA-CanESM2 CNRM-CERFACS-CNRM-CM5 NOAA-GFDL-ESM2M MIROC-MIROC5 NCC-NorESM1-M }  |
+| **CMIP6-experiment-name** | { historical rcp45 rcp85 } |
+| **CMIP6-ensemble-member** | { r1i1p1 } |
+| **RCM-institute-and-model-name** | { CSIRO-CCAM-???? BOM-BARPA-R NSW-NARCliMJ NSW-NARCliMK none }  |
+| **RCM-version-id** | *output*: { v1 } <br/> *bias-corrected-output*: { v1-QME }  |
+| **frequency** | { day 3hr 30min } |
+| **variable-name** | *output*: { tasmax tasmin pr ps clt dni scfWindDir WindDir150 WindDir250 Wind150 Wind250 sfcWind tdry tdew hurs ghi } <br/> *bias-adjusted-output*: { tasmaxAdjust tasminAdjust prAdjust FFDI } |
+
