@@ -68,6 +68,54 @@ We could explore the possibility of more systematic code sharing down the track,
 but for now the focus is simply on getting individual groups comfortable with making
 the details of code, environment and data processing steps available. 
 
+The following are some (Python-biased) recommended practices for those that are interested in developing
+and sharing code for others to use:
+
+#### 1. Don't reinvent the wheel
+
+It's possible that others have already developed code to perform your task and that this code
+available for you and others to use in existing software (or a package, library, module, toolbox etc). There are
+many advantages to using established, well-supported code, including:
+- Trust from you and the community that the code is doing what it's supposed to
+- "Sharing" code is as simple as documenting the software you use
+- Potential performance benefits
+- You save time by not having to write code that already exists
+
+#### 2. Contribute into established software where possible
+
+If your specific code functionality doesn't already exist, there may still be established software
+(or a package, library, module, toolbox etc) that *could* or *should* be able to perform your task. For example,
+say you want to develop and share code for computing the Universal Thermal Climate Index (UTCI). This fits
+clearly in the scope of the Python package (`xclim`)[https://xclim.readthedocs.io/en/stable/] and by
+contributing your code to `xclim` you benefit from:
+- Existing and maintained infrastructure for testing, developing, releasing your code
+- An easy way to share your code
+- A wider user-base to help improve the code, find bugs, build trust etc
+(Note the UTCI is a real example of code contributed to `xclim`, see: https://github.com/Ouranosinc/xclim/issues/1060)
+
+#### 3. Put your code in a version-controlled repository (e.g. Github)
+
+If you don't want to contribute your code into established software, or there doesn't seem to be
+anywhere appropriate, put your code in a version-controlled online repository. If possible, try to avoid
+sharing code via email, dropbox links etc. Github, for example, is free to use and its straightforward to
+[register and set up a repository for your code](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account)
+
+#### 4. Include info that makes it easy for others to use your code
+
+Try to include the following in your repository to make it easier for others to use your code (in approximate order
+of importance):
+- **A License:** A LICENSE file that details how your code is licensed to users
+- **Environment details:** Details of the software environment required to execute your code (e.g. a conda
+`environment.yml` or `requirements.txt` file listing the installed libraries)
+- **Documentation:** Documentation about your code and how to run it. This could be as simple as a README.txt file.
+It's also good practice to include documentation *within* your code (e.g. docstrings for Python functions)
+- **Tests** - Tests that demonstrate/verify that your code is doing what it's supposed to (e.g. a set of unit tests
+run by `pytest`)
+- **Info for contributors:** Information on if/how others can contribute to your code. This could also be included in 
+a README.txt
+- **Command line interface:** We all use different programming languages. Providing an easy way to run your code from
+the command line makes it accessible to a wider range of users.
+
 ## Appendices
 
 ### Appendix 1: Provenance tracking
