@@ -70,7 +70,7 @@ the details of code, environment and data processing steps available.
 
 The following are some (Python-biased) recommended practices for those that are interested in developing
 and sharing code for others to use. In addition, the [fair-software.nl](https://fair-software.nl/)
-provides a set of recommendations for producing software according to FAIR (Findable, Accessible,
+website provides a set of recommendations for producing software according to FAIR (Findable, Accessible,
 Interoperable and Reusable) principles.
 
 #### 1. Don't reinvent the wheel
