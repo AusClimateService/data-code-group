@@ -93,6 +93,7 @@ contributing your code to `xclim` you benefit from:
 - Existing and maintained infrastructure for testing, developing, releasing your code
 - An easy way to share your code
 - A wider user-base to help improve the code, find bugs, build trust etc
+
 (Note, the UTCI is a real example of code contributed to `xclim`, see: https://github.com/Ouranosinc/xclim/issues/1060)
 
 #### 3. Put your code in a version-controlled repository (e.g. Github)
@@ -100,7 +101,7 @@ contributing your code to `xclim` you benefit from:
 If you don't want to contribute your code into established software, or there doesn't seem to be
 anywhere appropriate, put your code in a version-controlled online repository. If possible, try to avoid
 sharing code via email, dropbox links etc. Github, for example, is free to use and its straightforward to
-[register and set up a repository for your code](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account)
+[register and set up a repository for your code](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account).
 
 #### 4. Include info that makes it easy for others to use your code
 
@@ -111,9 +112,9 @@ importance and ease):
 `environment.yml` or `requirements.txt` file listing the installed libraries)
 - **Documentation:** Documentation about your code and how to run it. This could be as simple as a README.txt file.
 It's also good practice to include documentation *within* your code (e.g. docstrings for Python functions)
-- **Tests** - Tests that demonstrate/verify that your code is doing what it's supposed to (e.g. a set of unit tests
+- **Tests:** Tests that demonstrate/verify that your code is doing what it's supposed to (e.g. a set of unit tests
 run by `pytest`)
-- **Info for contributors:** Information on if/how others can contribute to your code. This could also be included in 
+- **Information for contributors:** Information on if/how others can contribute to your code. This could also be included in 
 a README.txt
 - **Command line interface:** We all use different programming languages. Providing an easy way to run your code from
 the command line makes it accessible to a wider range of users
