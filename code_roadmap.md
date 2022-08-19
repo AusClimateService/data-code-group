@@ -69,7 +69,9 @@ but for now the focus is simply on getting individual groups comfortable with ma
 the details of code, environment and data processing steps available. 
 
 The following are some (Python-biased) recommended practices for those that are interested in developing
-and sharing code for others to use:
+and sharing code for others to use. In addition, the [fair-software.nl](https://fair-software.nl/)
+provides a set of recommendations for producing software according to FAIR (Findable, Accessible,
+Interoperable and Reusable) principles.
 
 #### 1. Don't reinvent the wheel
 
@@ -115,6 +117,8 @@ run by `pytest`)
 a README.txt
 - **Command line interface:** We all use different programming languages. Providing an easy way to run your code from
 the command line makes it accessible to a wider range of users
+
+
 
 ## Appendices
 
