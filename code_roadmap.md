@@ -57,17 +57,8 @@ are being proposed at this stage.
 
 ## Shared code
 
-It is possible that a small library of common code will be hosted
-and maintained by the Data and Code Group
-(e.g. for the calculation of complex hazard indicators, data standard checking, standard plotting style)
-but it is unlikely to be very large or comprehensive.
-In almost all instances individual groups within each Work Package will be doing their
-own code development for data processing. 
-
-We could explore the possibility of more systematic code sharing down the track,
-but for now the focus is simply on getting individual groups comfortable with making
-the details of code, environment and data processing steps available. 
-
+In some instances code written by some groups within ACS
+will be of interest to other groups within (and/or even outside of) ACS.
 The following are some (Python-biased) recommended practices for those that are interested in developing
 and sharing code for others to use. In addition, the [fair-software.nl](https://fair-software.nl/)
 website provides a set of recommendations for producing software according to FAIR (Findable, Accessible,
