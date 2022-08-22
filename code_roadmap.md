@@ -57,8 +57,8 @@ are being proposed at this stage.
 
 ## Shared code
 
-In some instances code written by some groups within ACS
-will be of interest to other groups within (and/or even outside of) ACS.
+In some instances code written by an individual/group within ACS
+will be of interest to another group within (and/or even outside of) ACS.
 The following are some (Python-biased) recommended practices for those that are interested in developing
 and sharing code for others to use. In addition, the [fair-software.nl](https://fair-software.nl/)
 website provides a set of recommendations for producing software according to FAIR (Findable, Accessible,
