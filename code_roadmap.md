@@ -78,14 +78,14 @@ many advantages to using established, well-supported software, including:
 
 If your specific code functionality doesn't already exist, there may still be established software
 (or a package, library, module, toolbox etc) that *could* or *should* be able to perform your task. For example,
-say you want to develop and share code for computing the Universal Thermal Climate Index (UTCI). This fits
-clearly within the scope of the Python package (`xclim`)[https://xclim.readthedocs.io/en/stable/] and by
+say you want to develop and share code for computing the McArthur Forest Fire Danger Index Mk5 (FFDI). This fits
+clearly within the scope of the Python package [`xclim`](https://xclim.readthedocs.io/en/stable/) and by
 contributing your code to `xclim` you benefit from:
 - Existing and maintained infrastructure for testing, developing, releasing your code
 - An easy way to share your code
 - A wider user-base to help improve the code, find bugs, build trust etc
 
-(Note, the UTCI is a real example of code contributed to `xclim`, see: https://github.com/Ouranosinc/xclim/issues/1060)
+(Note, the FFDI is a real example of code being contributed to `xclim` by ACS members, see: https://github.com/Ouranosinc/xclim/pull/1159)
 
 #### 3. Put your code in a version-controlled repository (e.g. Github)
 
