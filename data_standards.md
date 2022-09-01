@@ -39,7 +39,7 @@ To be advised by ACS Data Governance WG. [CC BY-SA 4.0](https://creativecommons.
 
 ## DRSs
 
-### CORDEX-CMIP6
+### CORDEX-CMIP6+
 *Adopted from [CORDEX-CMIP5 archive specifications](http://is-enes-data.github.io/cordex_archive_specifications.pdf).*
 
 #### Directory structure:  
