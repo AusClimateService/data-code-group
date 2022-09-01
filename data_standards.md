@@ -35,7 +35,7 @@ A CORDEX-CMIP6 CV and DRS are yet to be circulated, but they are expected to be 
 The [CMIP6 CV](https://docs.google.com/document/d/1h0r8RZr_f3-8egBMMh7aqLwy3snpD6_MrDz1q8n5XUk/edit) will be referenced where appropriate.
 
 #### Licensing 
-To be advised by ACS Data Governance WG. [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) as standard?
+To be advised by ACS Data Governance Framework. [CC-BY v4.0](https://creativecommons.org/licenses/by/4.0/) as standard.
 
 ## DRSs
 
