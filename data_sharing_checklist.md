@@ -11,10 +11,10 @@
 - Assigning a data custodian: who will be responsible for the ongoing management of this data, including requests, updates, etc?
 
 - File system management & permissions: ACLs to set up correctly (globally readable, but with an ia39_w mask for writing). To confirm:  
-Set owner to data custodian: `chown -R $data_custodian_id $directory
-Set group to ia39: `chgrp -R ia39 $directory`  
-Set permissions to user writable, group & other readable: `chmod -R 755 $directory`  
-Set ACLs to enable writability by ia39 writers group: `setfacl -R -m g:ia39_w:rwx $directory`   
+  - Set owner to data custodian: `chown -R $data_custodian_id $directory`  
+  - Set group to ia39: `chgrp -R ia39 $directory`  
+  - Set permissions to user writable, group & other readable: `chmod -R 755 $directory`  
+  - Set ACLs to enable writability by ia39 writers group: `setfacl -R -m g:ia39_w:rwx $directory`   
 
 - Advertising: will you be advertising the dataset widely/locally?
 
