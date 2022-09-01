@@ -56,14 +56,14 @@ To be advised by ACS Data Governance WG. [CC BY-SA 4.0](https://creativecommons.
 | ------------ | ------------ | 
 | **activity** | { CORDEX-CMIP6 }  |
 | **product** | { output bias-adjusted-output indices bias-adjusted-indices }  |
-| **domain** | { AUS-11i AUS-17i ??? }  |
+| **domain** | { AUS-11i AUS-17i  }  |
 |  **RCM-institution** | { BOM CSIRO QLD-DES? ??? }  |
 |**GCM-model-name** | refer to [CMIP6 CV](https://github.com/WCRP-CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json); format=institution_id-source_id (e.g. CSIRO-ARCCS-ACCESS-CM2) |
 | **CMIP6-experiment-name** | *CMIP6*: { historical ssp126 ssp245 ssp370 ssp585 } <br/> *ERA5*: { evaluation }  |
 | **CMIP6-ensemble-member** | { r?i?p?f? (e.g. r6i1p1f1) } |
 | **RCM-model-name** | { CCAM-???? BARPA-R CCAM-Qld }  |
-| **RCM-version-id** | { ??? }  |
-| **frequency-or-category** | *output, bias-corrected-output*: { mon day 6hr 3hr 1hr } <br/> *indices, bias-corrected-indices*: { climdex gev fire heat coasts trop-cyclones ... } |
+| **RCM-version-id** | { v1 v2 ... }  |
+| **frequency-or-category** | *output, bias-corrected-output*: { mon day 6hr 1hr 15min } <br/> *indices, bias-corrected-indices*: { climdex gev fire heat coasts trop-cyclones ... } |
 | **variable-name** | *output*: see [CORDEX-CMIP6 Atmosphere Variable List](https://docs.google.com/spreadsheets/d/1qUauozwXkq7r1g-L4ALMIkCNINIhhCPx/edit#gid=1672965248) <br/> *indices*: { cdd cwd fd r10mm r95ptot rx1day txn txx ... } <br/> *bias-adjusted-output, bias-adjusted-indices*: add 'Adjust' to end of output variable-name (e.g. pr -> prAdjust); see [CORDEX-Adjust DRS](http://is-enes-data.github.io/CORDEX_adjust_drs.pdf) |
 
 ### ESCI
