@@ -68,7 +68,7 @@ To be advised by ACS Data Governance Framework.
 |  **RCM-institution** | { `BOM`, `CSIRO`, `none` } |  |
 |**GCM-model-name** | format = \<**institution_id**\>-\<**source_id**> <br/> (e.g. `CSIRO-ARCCSS-ACCESS-CM2`) | Refer to [CMIP6 CV](https://github.com/WCRP-CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json) for valid institution and source names. |
 | **CMIP6-experiment-name** | *CMIP6*: { `historical`, `ssp126`, `ssp245`, `ssp370`, `ssp585`  } <br/> *ERA5*: { `evaluation` }  | Use `historical` for an observational dataset like `AGCD` |
-| **CMIP6-ensemble-member** | { `r?i?p?f?`} (e.g. `r6i1p1f1`) } | |
+| **CMIP6-ensemble-member** | { `r?i?p?f?`} (e.g. `r6i1p1f1`) | |
 | **RCM-model-name** | {  `BOM-BARPA-R`, `CSIRO-CCAM-????`, `none` }  |
 | **RCM-version-id** | { `v?`, `none` } (e.g. `v2`) |
 | **frequency-or-category** | *output, bias-corrected-output*: { `mon`, `day`, `6hr`, `1hr`, `15min` } <br/> *indices, bias-corrected-indices*: { `climdex`, `fire`, `heat`, `coasts`, `tropical-cyclones`, ... } | There are categories for [climdex indices](https://www.climdex.org/learn/indices/) and also each of the ACS hazard teams.
