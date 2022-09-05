@@ -44,7 +44,7 @@ To be advised by ACS Data Governance Framework. [CC-BY v4.0](https://creativecom
 
 #### Directory structure:  
 
-\<**activity**\>/\<**product**\>/\<**domain**\>/\<**RCM-institution**\>/\<**GCM-model-name**\>/\<**CMIP6-experiment-name**\>/\<**CMIP6-ensemble-member**\>/\<**RCM-model-name**\>/\<**RCM-version-ID**\>/\<**frequency-or-category**\>/\<**variable-name**>
+/g/data/ia39/australian-climate-service/\<**status**\>/\<**activity**\>/\<**product**\>/\<**domain**\>/\<**RCM-institution**\>/\<**GCM-model-name**\>/\<**CMIP6-experiment-name**\>/\<**CMIP6-ensemble-member**\>/\<**RCM-model-name**\>/\<**RCM-version-ID**\>/\<**frequency-or-category**\>/\<**variable-name**>
 
 #### Filenaming:  
 
@@ -54,8 +54,9 @@ To be advised by ACS Data Governance Framework. [CC-BY v4.0](https://creativecom
 
 | **key** = | [*restriction*:] { item1 item2 ... }  |
 | ------------ | ------------ | 
-| **activity** | { CORDEX-CMIP6 }  |
-| **product** | { output bias-adjusted-output indices bias-adjusted-indices }  |
+| **status** | { `test-data`, `release` }  |
+| **activity** | { `CORDEX-CMIP6` }  |
+| **product** | { `output`, `bias-adjusted-output`, `indices`, `bias-adjusted-indices` }  |
 | **domain** | { AUS-11i AUS-17i  }  |
 |  **RCM-institution** | { BOM CSIRO QLD-DES? ??? }  |
 |**GCM-model-name** | refer to [CMIP6 CV](https://github.com/WCRP-CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json); format=institution_id-source_id (e.g. CSIRO-ARCCS-ACCESS-CM2) |
