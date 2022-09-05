@@ -69,10 +69,10 @@ To be advised by ACS Data Governance Framework.
 |**GCM-model-name** | format = \<**institution_id**\>-\<**source_id**> <br/> (e.g. `CSIRO-ARCCSS-ACCESS-CM2`) | Refer to [CMIP6 CV](https://github.com/WCRP-CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json) for valid institution and source names. |
 | **CMIP6-experiment-name** | *CMIP6*: { `historical`, `ssp126`, `ssp245`, `ssp370`, `ssp585`  } <br/> *ERA5*: { `evaluation` }  | Use `historical` for an observational dataset like `AGCD` |
 | **CMIP6-ensemble-member** | { `r?i?p?f?`} (e.g. `r6i1p1f1`) } | |
-| **RCM-model-name** | {  `BOM-BARPA-R`, `none` }  |
+| **RCM-model-name** | {  `BOM-BARPA-R`, `CSIRO-CCAM-????`, `none` }  |
 | **RCM-version-id** | { `v?`, `none` } (e.g. `v2`) |
-| **frequency-or-category** | *output, bias-corrected-output*: { `mon`, `day`, `6hr`, `1hr`, `15min` } <br/> *indices, bias-corrected-indices*: { `climdex`, `fire`, `heat`, `coasts`, `trop-cyclones`, ... } | 
-| **variable-name** | *output*: see [CORDEX-CMIP6 Atmosphere Variable List](https://docs.google.com/spreadsheets/d/1qUauozwXkq7r1g-L4ALMIkCNINIhhCPx/edit#gid=1672965248) <br/> *indices*: { cdd cwd fd r10mm r95ptot rx1day txn txx ... } <br/> *bias-adjusted-output, bias-adjusted-indices*: add 'Adjust' to end of output variable-name (e.g. pr -> prAdjust); see [CORDEX-Adjust DRS](http://is-enes-data.github.io/CORDEX_adjust_drs.pdf) |
+| **frequency-or-category** | *output, bias-corrected-output*: { `mon`, `day`, `6hr`, `1hr`, `15min` } <br/> *indices, bias-corrected-indices*: { `climdex`, `fire`, `heat`, `coasts`, `tropical-cyclones`, ... } | There are categories for [climdex indices](https://www.climdex.org/learn/indices/) and also each of the ACS hazard teams.
+| **variable-name** | *output*: see [CORDEX-CMIP6 Atmosphere Variable List](https://docs.google.com/spreadsheets/d/1qUauozwXkq7r1g-L4ALMIkCNINIhhCPx/edit#gid=1672965248) <br/> *indices*: see [climdex indices list](https://www.climdex.org/learn/indices/) <br/> *bias-adjusted-output, bias-adjusted-indices*: add 'Adjust' to end of output variable-name (e.g. pr -> prAdjust); see [CORDEX-Adjust DRS](http://is-enes-data.github.io/CORDEX_adjust_drs.pdf) |
 
 ### ESCI
 *Adopted from [CORDEX-CMIP5 archive specifications](http://is-enes-data.github.io/cordex_archive_specifications.pdf).*  
@@ -80,7 +80,7 @@ See https://github.com/AusClimateService/ESCI-data-collection
 
 #### Directory structure:  
 
-/g/data/ia39/australian-climate-service/\<**status**\>/\<**activity**\>/\<**product**\>/\<**domain**\>//\<**GCM-model-name**\>/\<**CMIP5-experiment-name**\>/\<**CMIP5-ensemble-member**\>/\<**RCM-model-name**\>/\<**RCM-version-ID**\>/\<**frequency**\>/\<**variable-name**>
+/g/data/ia39/australian-climate-service/\<**status**\>/\<**activity**\>/\<**product**\>/\<**domain**\>/\<**GCM-model-name**\>/\<**CMIP5-experiment-name**\>/\<**CMIP5-ensemble-member**\>/\<**RCM-model-name**\>/\<**RCM-version-ID**\>/\<**frequency**\>/\<**variable-name**>
 
 #### Filenaming:  
 
@@ -95,9 +95,9 @@ See https://github.com/AusClimateService/ESCI-data-collection
 | **domain** | { `AUS-ESCI`, `AUS-ESCI-noWA` }  |
 | **GCM-model-name** | { `CSIRO-BOM-ACCESS1-0`, `CCCMA-CanESM2`, `CNRM-CERFACS-CNRM-CM5`, `NOAA-GFDL-ESM2M`, `MIROC-MIROC5`, `NCC-NorESM1-M` }  |
 | **CMIP6-experiment-name** | { `historical`, `rcp45`, `rcp85` } |
-| **CMIP6-ensemble-member** | { r1i1p1 } |
-| **RCM-institute-and-model-name** | { CSIRO-CCAM-???? BOM-BARPA-R NSW-NARCliMJ NSW-NARCliMK none }  |
-| **RCM-version-id** | *output*: { v1 } <br/> *bias-corrected-output*: { v1-QME }  |
-| **frequency** | { day 3hr 30min } |
-| **variable-name** | *output*: { tasmax tasmin pr ps clt dni scfWindDir WindDir150 WindDir250 Wind150 Wind250 sfcWind tdry tdew hurs ghi } <br/> *bias-adjusted-output*: { tasmaxAdjust tasminAdjust prAdjust FFDI } |
+| **CMIP6-ensemble-member** | { `r?i?p?` } (e.g. `r1i1p1`) |
+| **RCM-institute-and-model-name** | { `CSIRO-CCAM-????`, `BOM-BARPA-R`, `NSW-NARCliMJ`, `NSW-NARCliMK`, `none` }  |
+| **RCM-version-id** | *output*: { `v?`, `none` } <br/> *bias-corrected-output*: { `v?-QME`, `none` }  |
+| **frequency** | { `day`, `3hr`, `30min` } |
+| **variable-name** | *output*: { `tasmax`, `tasmin`, `pr`, `ps`, `clt`, `dni`, `scfWindDir`, `WindDir150`, `WindDir250`, `Wind150`, `Wind250`, `sfcWind`, `tdry`, `tdew`, `hurs`, `ghi` } <br/> *bias-adjusted-output*: { `tasmaxAdjust`, `tasminAdjust`, `prAdjust`, `FFDI` } |
 
