@@ -11,14 +11,18 @@
 - Assigning a data custodian: who will be responsible for the ongoing management of this data, including requests, updates, etc?
 
 - File system management & permissions: ACLs to set up correctly (globally readable, but with an ia39_w mask for writing). To confirm:  
-  - Set owner to data custodian: `chown -R $data_custodian_id $directory`  
+  - Set owner to data custodian: `chown -R $data_custodian_id $directory` (note: this must be done by NCI help desk via a ticket)  
   - Set group to ia39: `chgrp -R ia39 $directory`  
   - Set permissions to user writable, group & other readable: `chmod -R 755 $directory`  
   - Set ACLs to enable writability by ia39 writers group: `setfacl -R -m g:ia39_w:rwx $directory`   
 
 - Advertising: will you be advertising the dataset widely/locally?
 
+- Post-processing code under version control: is the code and schemas used to generate the final datasets in the ACS Github, or otherwised version controlled?
+
+---
+For future consideration after formalisation of D&CG:
+
 - Intake catalogue: are your data catalogued in an intake-esm catalogue for ease of access and use?
 
-- Post-processing code under version control: is the code and schemas used to generate the final datasets in the ACS Github, or otherwised version controlled?
 
