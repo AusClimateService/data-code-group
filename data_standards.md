@@ -59,19 +59,19 @@ To be advised by ACS Data Governance Framework.
   
 #### Controlled Vocabulary:
 
-| **key** = | [*restriction*:] { item1 item2 ... }  |
-| ------------ | ------------ | 
-| **status** | { `test-data`, `release` }  |
-| **activity** | { `CORDEX-CMIP6` }  |
-| **product** | { `output`, `bias-adjusted-output`, `indices`, `bias-adjusted-indices` }  |
-| **domain** | format = \<**region**\>-\<**grid**> <br /> { `AUS-15`, `AUS-17i`, `AUS-r005`, `GLOBAL-gn` }  |
-|  **RCM-institution** | { `BOM`, `CSIRO`, `none` }  |
-|**GCM-model-name** | format = \<**institution_id**\>-\<**source_id**> (e.g. `CSIRO-ARCCSS-ACCESS-CM2`) <br/> refer to [CMIP6 CV](https://github.com/WCRP-CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json) for valid institution and source names  |
-| **CMIP6-experiment-name** | *CMIP6*: { `historical`, `ssp126`, `ssp245`, `ssp370`, `ssp585`  } <br/> *ERA5*: { `evaluation` }  |
-| **CMIP6-ensemble-member** | { `r?i?p?f?` (e.g. `r6i1p1f1`) } |
+| **key** = | [*restriction*:] { item1 item2 ... }  | notes |
+| ------------ | ------------ | --------- |
+| **status** | { `test-data`, `release` }  | |
+| **activity** | { `CORDEX-CMIP6` }  | |
+| **product** | { `output`, `bias-adjusted-output`, `indices`, `bias-adjusted-indices` }  | |
+| **domain** | format = \<**region**\>-\<**grid**> <br /> { `AUS-15`, `AUS-17i`, `AUS-r005`, `GLOBAL-gn` }  | `AUS-15` is a CORDEX-australasia example. <br /> `AUS-r005` is a AGCD indices example. <br /> `GLOBAL-gn` is a global climate model example where `gn` is the CMIP6 native grid abbreviation. |
+|  **RCM-institution** | { `BOM`, `CSIRO`, `none` } |  |
+|**GCM-model-name** | format = \<**institution_id**\>-\<**source_id**> <br/> (e.g. `CSIRO-ARCCSS-ACCESS-CM2`) | Refer to [CMIP6 CV](https://github.com/WCRP-CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json) for valid institution and source names. |
+| **CMIP6-experiment-name** | *CMIP6*: { `historical`, `ssp126`, `ssp245`, `ssp370`, `ssp585`  } <br/> *ERA5*: { `evaluation` }  | Use `historical` for an observational dataset like `AGCD` |
+| **CMIP6-ensemble-member** | { `r?i?p?f?`} (e.g. `r6i1p1f1`) } | |
 | **RCM-model-name** | {  `BOM-BARPA-R`, `none` }  |
 | **RCM-version-id** | { `v?`, `none` } (e.g. `v2`) |
-| **frequency-or-category** | *output, bias-corrected-output*: { mon day 6hr 1hr 15min } <br/> *indices, bias-corrected-indices*: { climdex gev fire heat coasts trop-cyclones ... } |
+| **frequency-or-category** | *output, bias-corrected-output*: { `mon`, `day`, `6hr`, `1hr`, `15min` } <br/> *indices, bias-corrected-indices*: { `climdex`, `fire`, `heat`, `coasts`, `trop-cyclones`, ... } | 
 | **variable-name** | *output*: see [CORDEX-CMIP6 Atmosphere Variable List](https://docs.google.com/spreadsheets/d/1qUauozwXkq7r1g-L4ALMIkCNINIhhCPx/edit#gid=1672965248) <br/> *indices*: { cdd cwd fd r10mm r95ptot rx1day txn txx ... } <br/> *bias-adjusted-output, bias-adjusted-indices*: add 'Adjust' to end of output variable-name (e.g. pr -> prAdjust); see [CORDEX-Adjust DRS](http://is-enes-data.github.io/CORDEX_adjust_drs.pdf) |
 
 ### ESCI
