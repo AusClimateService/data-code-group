@@ -68,7 +68,7 @@ To be advised by ACS Data Governance Framework.
 |  **RCM-institution** | { `BOM`, `CSIRO`, `none` } |  |
 |**GCM-model-name** | format = \<**institution_id**\>-\<**source_id**> <br/> (e.g. `CSIRO-ARCCSS-ACCESS-CM2`) | Refer to [CMIP6 CV](https://github.com/WCRP-CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json) for valid institution and source names. |
 | **experiment-name** | *CMIP6*: { `historical`, `ssp126`, `ssp245`, `ssp370`, `ssp585`  } <br/> *ERA5*: { `evaluation` }  | Use `historical` for an observational dataset like `AGCD` or `BARRA2` |
-| **ensemble-member** | { `r?i?p?f?`, `hres`, `eda`} (e.g. `r6i1p1f1`) | BARRA-R2 uses ERA5's HRES (deterministic) forcing while BARRA-RE2 uses ERA5's EDA (ensemble of DA) forcing. |
+| **ensemble-member** | { `r?i?p?f?`, `hres`, `eda`} (e.g. `r6i1p1f1`) | `BARRA-R2` uses ERA5's HRES (deterministic) forcing while `BARRA-RE2` uses ERA5's EDA (ensemble of DA) forcing. |
 | **RCM-model-name** | {  `BOM-BARPA-R`, `BOM-BARRA-R2`, `BOM-BARRA-RE2`, `CSIRO-CCAM-????`, `none` }  |
 | **RCM-version-id** | { `v?`, `none` } (e.g. `v2`) |
 | **frequency-or-category** | *output, bias-corrected-output*: { `mon`, `day`, `6hr`, `3hr`, `1hr`, `15min` } <br/> *indices, bias-corrected-indices*: { `climdex`, `fire`, `heat`, `coasts`, `tropical-cyclones`, ... } | There are categories for [climdex indices](https://www.climdex.org/learn/indices/) and also each of the ACS hazard teams.
@@ -94,8 +94,8 @@ See https://github.com/AusClimateService/ESCI-data-collection
 | **product** | { `output`, `bias-adjusted-output` } |
 | **domain** | { `AUS-ESCI`, `AUS-ESCI-noWA` }  |
 | **GCM-model-name** | { `CSIRO-BOM-ACCESS1-0`, `CCCMA-CanESM2`, `CNRM-CERFACS-CNRM-CM5`, `NOAA-GFDL-ESM2M`, `MIROC-MIROC5`, `NCC-NorESM1-M` }  |
-| **CMIP6-experiment-name** | { `historical`, `rcp45`, `rcp85` } |
-| **CMIP6-ensemble-member** | { `r?i?p?` } (e.g. `r1i1p1`) |
+| **CMIP5-experiment-name** | { `historical`, `rcp45`, `rcp85` } |
+| **CMIP5-ensemble-member** | { `r?i?p?` } (e.g. `r1i1p1`) |
 | **RCM-institute-and-model-name** | { `CSIRO-CCAM-????`, `BOM-BARPA-R`, `NSW-NARCliMJ`, `NSW-NARCliMK`, `none` }  |
 | **RCM-version-id** | *output*: { `v?`, `none` } <br/> *bias-corrected-output*: { `v?-QME`, `none` }  |
 | **frequency** | { `day`, `3hr`, `30min` } |
