@@ -31,7 +31,7 @@ Current active members:
 - Damien Irving
 - Chloe Mackallah
 - Mitchell Black
-- Jennifer Mitchell 
+- Clare Richards 
 - Naomi Berger
 - Chun-Hsu Su
 - Christian Stassen
@@ -40,6 +40,8 @@ Current active members:
 - Dougie Squire
 - Ben Schroeter
 - François Delage
+- Emma Howard
+- Alicia Takbash
 
 ### Consultation list
 
@@ -47,5 +49,4 @@ These are the people the Data and Code Group consults when making decisions
 (i.e. people who regularly write code and process data for ACS Project 2).
 
 Current consultation list:
-- Doug Richardson
 - Vanessa Hernaman
