@@ -61,8 +61,8 @@ To be advised by ACS Data Governance Framework.
 
 | **key** = | [*restriction*:] { item1 item2 ... }  | notes |
 | ------------ | ------------ | --------- |
-| **status** | { `test-data`, `staged`, `pre-release`, `release` }  | |
-| **activity** | { `CORDEX-CMIP6`, `ACS-DOWNSCALING-CMIP6`, `ACS-BARRA2` }  | |
+| **status** | { `test-data`, `staged`, `release` }  | |
+| **activity** | { `CORDEX-CMIP6`, `ACS-DOWNSCALING`, `ACS-BARRA2` }  | `CORDEX-CMIP6` can include additional grids that are not required by the CORDEX initiative. |
 | **product** | { `output`, `bias-adjusted-output`, `indices`, `bias-adjusted-indices` }  | |
 | **domain** | format = \<**region**\>-\<**grid**> <br /> { `AUS-11`, `AUS-15`, `AUS-17i`, `AUS-22`, `AUS-r005`, `GLOBAL-gn` }  | `AUS-15` is a CORDEX-Australasia example. <br /> `AUS-r005` is a AGCD indices example. <br /> `GLOBAL-gn` is a global climate model example where `gn` is the CMIP6 native grid abbreviation. |
 |  **RCM-institution** | { `BOM`, `CSIRO`, `none` } |  |
@@ -70,7 +70,7 @@ To be advised by ACS Data Governance Framework.
 | **experiment-name** | *CMIP6*: { `historical`, `ssp126`, `ssp245`, `ssp370`, `ssp585`  } <br/> *ERA5*: { `evaluation` }  | Use `historical` when driving with an observational dataset like `AGCD` or `BARRA2` |
 | **ensemble-member** | { `r?i?p?f?`, `hres`, `eda`} | For CMIP6-driven simulations, use the ensemble string from the driving dataset (e.g. `r6i1p1f1`). <br/> `BARRA-R2` uses ERA5's HRES (deterministic) forcing while `BARRA-RE2` uses ERA5's EDA (ensemble of DA) forcing. |
 | **RCM-model-name** | {  `BOM-BARPA-R`, `BOM-BARRA-R2`, `BOM-BARRA-RE2`, `CSIRO-CCAM-????`, `none` }  |
-| **RCM-version-id** | { `v?`, `none` } | (e.g. `v2`) |
+| **RCM-version-id** | { `v?`, `none` } | (e.g. `v2`) TODO: Determine process for updating version when data is corrected / updated. |
 | **frequency-or-category** | *output, bias-corrected-output*: { `mon`, `day`, `6hr`, `3hr`, `1hr`, `15min` } <br/> *indices, bias-corrected-indices*: { `climdex`, `fire`, `heat`, `coasts`, `tropical-cyclones`, ... } | There are categories for [climdex indices](https://www.climdex.org/learn/indices/) and also each of the ACS hazard teams.
 | **variable-name** | *output*: see [CORDEX-CMIP6 Atmosphere Variable List](https://docs.google.com/spreadsheets/d/1qUauozwXkq7r1g-L4ALMIkCNINIhhCPx/edit#gid=1672965248) <br/> *indices*: see [climdex indices list](https://www.climdex.org/learn/indices/) <br/> *bias-adjusted-output, bias-adjusted-indices*: add 'Adjust' to end of output variable-name (e.g. pr -> prAdjust); see [CORDEX-Adjust DRS](http://is-enes-data.github.io/CORDEX_adjust_drs.pdf) |
 
