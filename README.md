@@ -42,6 +42,7 @@ Current active members:
 - François Delage
 - Emma Howard
 - Alicia Takbash
+- Thomas Moore
 
 ### Consultation list
 
