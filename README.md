@@ -1,12 +1,12 @@
 # Data and Code Group
 
 A “Data and Code Group” has been established within Work Package 4
-to develop and implement data and code standards across ACS Project 2
+to develop and implement data and code standards across ACS Project 3
 and to coordinate the associated infrastructure, support and reporting to management.
 
 ### Communication
 
-The group meets once a month via Microsoft Teams (see `minutes/` and `agenda.md`) and
+The group meets approximately monthly via Microsoft Teams (see `minutes/` and `agenda.md`) and
 chats on that platform between meetings
 (reach out to damien.irving@csiro.au if you'd like access to the chat and/or invites to meetings).
 Action items are managed via [tagged issues](https://github.com/AusClimateService/data-code-group/issues?q=is%3Aissue+is%3Aopen+label%3A%22action+item%22).
@@ -37,17 +37,8 @@ Current active members:
 - Christian Stassen
 - Claire Trenham
 - Marcus Thatcher
-- Dougie Squire
 - Ben Schroeter
 - François Delage
 - Emma Howard
 - Alicia Takbash
 - Thomas Moore
-
-### Consultation list
-
-These are the people the Data and Code Group consults when making decisions
-(i.e. people who regularly write code and process data for ACS Project 2).
-
-Current consultation list:
-- Vanessa Hernaman
