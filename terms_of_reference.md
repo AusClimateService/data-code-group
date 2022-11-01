@@ -84,14 +84,15 @@ and be published or catalogued with a persistent identifier (e.g., Zenodo, [CSIR
 -	Schedule and chair regular Data and Code Group meetings
 - Liaise with ACS management on behalf of the Data and Code Group as required
 - Be a primary point of contact between science development and technical implementation
+- (The Data and Code Lead may also take on one of the roles below.)
 
 #### Data Custodian - 2 people across CSIRO/BoM
 
-- Management and oversee final datasets for sharing & publication (i.e., [ia39](https://my.nci.org.au/mancini/project/ia39), etc).
+- Manage and oversee datasets for sharing and publication (e.g. via NCI project [ia39](https://my.nci.org.au/mancini/project/ia39)
 -	Maintain and update the project [data roadmap](https://github.com/AusClimateService/data-code-group/blob/main/data_roadmap.md)
 -	Lead the development of [data standards](https://github.com/AusClimateService/data-code-group/blob/main/data_standards.md),
   including the definition of relevant DRSs and Controlled Vocabularies (CVs)
--	Quality check data flowing into sharing & publication projects (example from ACCESS-CMIP6 processing)
+-	Quality check data flowing into sharing and publication projects (example from ACCESS-CMIP6 processing)
 -	Manage NCI project storage allocations
 -	Report on storage usage to the Data and Code Lead
 -	Maintain the [Intake](https://intake.readthedocs.io/en/latest/) data catalogue and prepare example Jupyter notebooks
