@@ -7,7 +7,7 @@ to support better planning and preparedness for climate and natural hazards,
 and better response and recovery to disasters when they strike.
 The ACS will connect and leverage the Commonwealth’s extensive climate and natural hazard information into a single national view.
 The ACS is funding several programs of work to develop the data and platforms
-that will provide government with data and intelligence relating to natural disasters
+that will provide government with intelligence relating to natural disasters
 to aid in prevention, preparedness, emergency response, recovery, relief, and resilience. 
 Program 3 of ACS is a collaboration between the Bureau of Meteorology and CSIRO Climate Science Centre
 and will focus on developing natural hazard predictions and projections,
@@ -39,7 +39,6 @@ any requirements for delivery into the ACS.
 This includes oversight and support of the following tasks:
 -	The standardisation of model output and derived datasets
 -	Code sharing, documentation, and publication
--	Data delivery (cloud, webtools, etc)
 -	Data storage planning and provision
 
 The following tasks are to be led and carried out by the Data and Code Group:
@@ -53,7 +52,7 @@ The following tasks are to be led and carried out by the Data and Code Group:
 
 ### Governance
 
-The Data & Code Lead coordinates the activities of the Group.
+The Data and Code Lead coordinates the activities of the Group.
 This role reports to the Program 3 leads (Richard Matear, CSIRO, and David Jones, BoM).
 Additional consultation will be required with the
 CSIRO ACS coordinator (Mark Hemer),
@@ -61,7 +60,7 @@ CSIRO O&A Digital Lead (Chloe Mackallah, CSIRO),
 the ACS Data Governance Framework Lead (Clare Richards, BoM) and
 Program 3 Work Package leads.
 Furthermore, the ACS Data Governance framework will provide general guidance and oversight
-to the decisions of the D&CG via its representatives from Program 3 (Chloe Mackallah, CSIRO, and Doerte Jakob, BoM).
+to the decisions of the Data and Code Group via its representatives from Program 3 (Chloe Mackallah, CSIRO, and Doerte Jakob, BoM).
 
 ### Licencing and availability of data and code
 
@@ -80,43 +79,38 @@ and be published or catalogued with a persistent identifier (e.g., Zenodo, [CSIR
 
 ### Member roles and responsibilities
 
-#### Data & Code Lead / Data Steward - 1 person
+#### Data and Code Lead / Data Steward - 1 person
 
-Point of contact between the science development and technical implementation.
 -	Schedule and chair regular Data and Code Group meetings
--	Lead the development of project [data standards](https://github.com/AusClimateService/data-code-group/blob/main/data_standards.md),
-  including the definition of relevant DRSs and Controlled Vocabularies (CVs)
--	Licensing of ACS data products
--	Ensure replication of required input data
-  (e.g. [oi10](https://my.nci.org.au/mancini/project/oi10), [aus-ref-clim-data-nci](https://github.com/aus-ref-clim-data-nci))
--	Liaise with science leads to ensure data is fit for purpose (i.e., hazards)
--	Manage NCI project storage allocations
--	Maintain and update the project [data roadmap](https://github.com/AusClimateService/data-code-group/blob/main/data_roadmap.md)
+- Liaise with ACS management on behalf of the Data and Code Group as required
+- Be a primary point of contact between science development and technical implementation
 
 #### Data Custodian - 2 people across CSIRO/BoM
 
-Management and oversight of final datasets for sharing & publication (i.e., [ia39](https://my.nci.org.au/mancini/project/ia39), etc).
--	Contribute to the DRS development
--	Assist the development and use of Axiom across Program 3
+- Management and oversee final datasets for sharing & publication (i.e., [ia39](https://my.nci.org.au/mancini/project/ia39), etc).
+-	Maintain and update the project [data roadmap](https://github.com/AusClimateService/data-code-group/blob/main/data_roadmap.md)
+-	Lead the development of [data standards](https://github.com/AusClimateService/data-code-group/blob/main/data_standards.md),
+  including the definition of relevant DRSs and Controlled Vocabularies (CVs)
 -	Quality check data flowing into sharing & publication projects (example from ACCESS-CMIP6 processing)
--	Maintain the [Intake](https://intake.readthedocs.io/en/latest/) data catalogue and prepare example Jupyter notebooks
+-	Manage NCI project storage allocations
 -	Report on storage usage to Data Steward
+-	Maintain the [Intake](https://intake.readthedocs.io/en/latest/) data catalogue and prepare example Jupyter notebooks
 -	Maintain documentation on currently available datasets
--	Incorporate DRS into schemas when developed
+-	Assist with the development and use of Axiom across Program 3
+-	Ensure appropriate licensing of ACS data products
 
 #### Software Custodian - 2 people across CSIRO/BoM
 
-- Manage the [ACS Program 3 GitHub Organisation](https://github.com/AusClimateService)
 - Update and maintain the project [code roadmap](https://github.com/AusClimateService/data-code-group/blob/main/code_roadmap.md)
+- Manage the [ACS Program 3 GitHub Organisation](https://github.com/AusClimateService)
 -	Coordinate reviews of code submissions from Work Packages
 -	Assist scientists to get their code up to ACS standards
 -	Assist in the publication code as required into the [CSIRO Data Access Portal](https://data.csiro.au/) / Zenodo with appropriate documentation
 
 #### Software Engineer (Axiom) - 1 person
 
-Developer of [Axiom](https://github.com/AusClimateService/axiom) and
-related tools used for the CMORisation of final datasets.
+- Develop [Axiom](https://github.com/AusClimateService/axiom) and related tools used for the CMORisation of final datasets
 -	Fix bugs and in Axiom as reported by Data Custodian
--	Build new utilities into Axiom as requested by Data Steward/Custodian
+-	Build new functionality into Axiom as requested by Data Steward/Custodian
 -	Maintain existing documentation, and prepare additional as needed
 -	Advise users of Axiom, including training if required
