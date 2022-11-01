@@ -79,7 +79,7 @@ and be published or catalogued with a persistent identifier (e.g., Zenodo, [CSIR
 
 ### Member roles and responsibilities
 
-#### Data and Code Lead / Data Steward - 1 person
+#### Data and Code Lead - 1 person
 
 -	Schedule and chair regular Data and Code Group meetings
 - Liaise with ACS management on behalf of the Data and Code Group as required
@@ -93,7 +93,7 @@ and be published or catalogued with a persistent identifier (e.g., Zenodo, [CSIR
   including the definition of relevant DRSs and Controlled Vocabularies (CVs)
 -	Quality check data flowing into sharing & publication projects (example from ACCESS-CMIP6 processing)
 -	Manage NCI project storage allocations
--	Report on storage usage to Data Steward
+-	Report on storage usage to the Data and Code Lead
 -	Maintain the [Intake](https://intake.readthedocs.io/en/latest/) data catalogue and prepare example Jupyter notebooks
 -	Maintain documentation on currently available datasets
 -	Assist with the development and use of Axiom across Program 3
@@ -111,6 +111,6 @@ and be published or catalogued with a persistent identifier (e.g., Zenodo, [CSIR
 
 - Develop [Axiom](https://github.com/AusClimateService/axiom) and related tools used for the CMORisation of final datasets
 -	Fix bugs and in Axiom as reported by Data Custodian
--	Build new functionality into Axiom as requested by Data Steward/Custodian
+-	Build new functionality into Axiom as requested by the Data Custodian and/or Data and Code Lead
 -	Maintain existing documentation, and prepare additional as needed
 -	Advise users of Axiom, including training if required
