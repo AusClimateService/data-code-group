@@ -102,7 +102,7 @@ Core responsibilities (1 day per fortnight; 0.1 FTE per person):
 - Maintain the [data standards](https://github.com/AusClimateService/data-code-group/blob/main/data_standards.md),
   which describe standards for individual data files relating to file formats and metadata (e.g. DRSs and Controlled Vocabularies)
 - Manage NCI project storage allocations
-- Manage the ACS Project 3 datasets that are for sharing and publication (e.g. via NCI project [ia39](https://my.nci.org.au/mancini/project/ia39)
+- Manage the ACS Project 3 datasets that are for sharing and publication (e.g. via NCI project [ia39](https://my.nci.org.au/mancini/project/ia39))
 - Ensure appropriate licensing of ACS data products
 - Report on storage usage to the Data and Code Lead
 - Maintain documentation on currently available datasets
