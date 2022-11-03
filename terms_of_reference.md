@@ -79,39 +79,64 @@ and be published or catalogued with a persistent identifier (e.g., Zenodo, [CSIR
 
 ### Member roles and responsibilities
 
+There are a number of formal roles associated with the Data and Code Group.
+Each role has core responsibilities that are expected to be completed by the appointees to those roles,
+as well as desirable/extra responsibilities that could be performed by the appointees
+(provided they are given extra FTE allocation)
+or by others working on the ACS.
+
 #### Data and Code Lead - 1 person
 
--	Schedule and chair regular Data and Code Group meetings
-- Liaise with ACS management on behalf of the Data and Code Group as required
-- Be a primary point of contact between science development and technical implementation
-- (The Data and Code Lead may also take on one of the roles below.)
+Core responsibilities (1/2 day per fortnight; 0.05 FTE)
+- Schedule and chair regular Data and Code Group meetings
+- Liaise with ACS staff and management on behalf of the Data and Code Group
+
+(The Data and Code Lead will probably also take on one of the roles below.)
 
 #### Data Custodian - 2 people across CSIRO/BoM
 
-- Manage and oversee datasets for sharing and publication (e.g. via NCI project [ia39](https://my.nci.org.au/mancini/project/ia39)
--	Maintain and update the project [data roadmap](https://github.com/AusClimateService/data-code-group/blob/main/data_roadmap.md)
--	Lead the development of [data standards](https://github.com/AusClimateService/data-code-group/blob/main/data_standards.md),
-  including the definition of relevant DRSs and Controlled Vocabularies (CVs)
--	Quality check data flowing into sharing and publication projects (example from ACCESS-CMIP6 processing)
--	Manage NCI project storage allocations
--	Report on storage usage to the Data and Code Lead
--	Maintain the [Intake](https://intake.readthedocs.io/en/latest/) data catalogue and prepare example Jupyter notebooks
--	Maintain documentation on currently available datasets
--	Assist with the development and use of Axiom across Program 3
--	Ensure appropriate licensing of ACS data products
+Core responsibilities (1 day per fortnight; 0.1 FTE per person):
+- Maintain the [data roadmap](https://github.com/AusClimateService/data-code-group/blob/main/data_roadmap.md),
+  which describes in broad terms how data produced by ACS Project 3 will be managed
+  (e.g. data processing workflows, storage locations)
+- Maintain the [data standards](https://github.com/AusClimateService/data-code-group/blob/main/data_standards.md),
+  which describe standards for individual data files relating to file formats and metadata (e.g. DRSs and Controlled Vocabularies)
+- Manage NCI project storage allocations
+- Manage the ACS Project 3 datasets that are for sharing and publication (e.g. via NCI project [ia39](https://my.nci.org.au/mancini/project/ia39)
+- Ensure appropriate licensing of ACS data products
+- Report on storage usage to the Data and Code Lead
+- Maintain documentation on currently available datasets
+
+Desirable responsibilities:
+- Build and maintain an ACS Project 3 data catalogue (e.g. using [Intake](https://intake.readthedocs.io/en/latest/))
+  with accompanying documentation (e.g. example Jupyter notebooks)
 
 #### Software Custodian - 2 people across CSIRO/BoM
 
-- Update and maintain the project [code roadmap](https://github.com/AusClimateService/data-code-group/blob/main/code_roadmap.md)
+Core responsibilities (1/2 day per fortnight; 0.05 FTE per person):
+- Maintain the [code roadmap](https://github.com/AusClimateService/data-code-group/blob/main/code_roadmap.md),
+  which describes in broad terms how the code produced by ACS Project 3 will be managed
 - Manage the [ACS Program 3 GitHub Organisation](https://github.com/AusClimateService)
--	Coordinate reviews of code submissions from Work Packages
--	Assist scientists to get their code up to ACS standards
--	Assist in the publication code as required into the [CSIRO Data Access Portal](https://data.csiro.au/) / Zenodo with appropriate documentation
+- Advise scientists about how to bring their code up to ACS standards
+- Advise scientists on code publication as required (e.g. via the [CSIRO Data Access Portal](https://data.csiro.au/) or Zenodo)
+- Coordinate code reviews as required
+
+Desirable responsibilities:
+- Assist scientists to get their code up to ACS standards
+  (i.e. in addition to providing advice, this may involve writing code)*
+- Perform code reviews as required
+
+*This level of assistance would typically be reserved for software critical to the success of ACS Project 3
+that needs to be used by many people across the project.
 
 #### Software Engineer (Axiom) - 1 person
 
-- Develop [Axiom](https://github.com/AusClimateService/axiom) and related tools used for the CMORisation of final datasets
--	Fix bugs and in Axiom as reported by Data Custodian
--	Build new functionality into Axiom as requested by the Data Custodian and/or Data and Code Lead
--	Maintain existing documentation, and prepare additional as needed
--	Advise users of Axiom, including training if required
+Core responsibilities (1/2 day per fortnight; 0.05 FTE):
+- Maintain [Axiom](https://github.com/AusClimateService/axiom) (i.e. bug fixes, basic documentation)
+  and related tools used for the CMORisation of published datasets
+- Advise users of Axiom (e.g. answer simple usage questions)
+
+Desirable responsibilities:
+- Build new functionality into Axiom
+- Develop detailed documentation (e.g. examples, tutorials)
+- Assist users of Axiom (e.g. answer detailed questions), including providing training if required
