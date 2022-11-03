@@ -106,6 +106,7 @@ Core responsibilities (1 day per fortnight; 0.1 FTE per person):
 - Ensure appropriate licensing of ACS data products
 - Report on storage usage to the Data and Code Lead
 - Maintain documentation on currently available datasets
+- Maintain the CSIRO Research Data Plan/s for ACS Project 3 [CSIRO Data Custodian only]
 
 Desirable responsibilities:
 - Build and maintain an ACS Project 3 data catalogue (e.g. using [Intake](https://intake.readthedocs.io/en/latest/))
