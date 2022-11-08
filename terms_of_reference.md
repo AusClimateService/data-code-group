@@ -95,7 +95,7 @@ Core responsibilities (1/2 day per fortnight; 0.05 FTE)
 
 #### Data Custodian - 2 people across CSIRO/BoM
 
-Core responsibilities (1 day per fortnight; 0.1 FTE per person):
+Core responsibilities (1 day per week; 0.2 FTE per person):
 - Maintain the [data roadmap](https://github.com/AusClimateService/data-code-group/blob/main/data_roadmap.md),
   which describes in broad terms how data produced by ACS Project 3 will be managed
   (e.g. data processing workflows, storage locations)
@@ -107,6 +107,8 @@ Core responsibilities (1 day per fortnight; 0.1 FTE per person):
 - Report on storage usage to the Data and Code Lead
 - Maintain documentation on currently available datasets
 - Maintain the CSIRO Research Data Plan/s for ACS Project 3 [CSIRO Data Custodian only]
+- Ensure that input datasets for ACS analysis (e.g. AGCD, BARRA) are easily and consistenly accessible
+  (in collaboration with the [Australian Community Reference Climate Data Collection](https://github.com/aus-ref-clim-data-nci) where necessary)   
 
 Desirable responsibilities:
 - Build and maintain an ACS Project 3 data catalogue (e.g. using [Intake](https://intake.readthedocs.io/en/latest/))
@@ -118,6 +120,7 @@ Core responsibilities (1/2 day per fortnight; 0.05 FTE per person):
 - Maintain the [code roadmap](https://github.com/AusClimateService/data-code-group/blob/main/code_roadmap.md),
   which describes in broad terms how the code produced by ACS Project 3 will be managed
 - Manage the [ACS Program 3 GitHub Organisation](https://github.com/AusClimateService)
+- Make sure ACS scientists are aware of pre-existing code/software for common analysis tasks
 - Advise scientists about how to bring their code up to ACS standards
 - Advise scientists on code publication as required (e.g. via the [CSIRO Data Access Portal](https://data.csiro.au/) or Zenodo)
 - Coordinate code reviews as required
