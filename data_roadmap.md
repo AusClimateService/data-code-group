@@ -32,11 +32,15 @@ The desired directory structure of `xv83` is as follows:
 ```
 xv83/
 ├── datasets/
-|   ├── agcd-csiro
-|   ├── dcfp
+|   ├── agcd-csiro/
+|   ├── dcfp/
 |   |   ├── CAFE60v1/
 |   |   ├── CAFE-f5/
 |   |   └── CAFE-f6/
+|   ├── large-ensembles/
+|   |   ├── CCSM/
+|   |   ├── CESM1-CAM5-BGC-LE/
+|   |   └── CESM1-LME/
 ├── users/
 |   ├── abc123
 |   ├── efg456
