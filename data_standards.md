@@ -46,47 +46,53 @@ To be advised by ACS Data Governance Framework.
 
 ## DRSs
 
-### CORDEX-CMIP6+
-*Adopted from [CORDEX-CMIP5 archive specifications](http://is-enes-data.github.io/cordex_archive_specifications.pdf).*
+### **CORDEX-CMIP6+**
+*Adopted from [CORDEX-CMIP6 archive specifications](https://drive.google.com/file/d/1rHxVFXxtyWBuWzKWlpn55aSH0t5cWYdE/view).*  
+*updated 17/11/2023*
 
-#### Directory structure:  
+### Directory structure:  
 
-/g/data/ia39/australian-climate-service/\<**status**\>/\<**activity**\>/\<**product**\>/\<**domain**\>/\<**RCM-institution**\>/\<**GCM-model-name**\>/\<**experiment-name**\>/\<**ensemble-member**\>/\<**RCM-model-name**\>/\<**RCM-version-ID**\>/\<**frequency-or-category**\>/\<**variable-name**>
+\<**project_id**\>/\<**mip_era**\>/\<**activity_id**\>/\<**domain_id**\>/\<**institution_id**\>/\<**driving_source_id**\>/\<**driving_experiment_id**\>/\<**driving_variant_label**\>/\<**source_id**\>/\<**version_realization**\>/\<**frequency**\>/\<**variable_id**>/\<**version**\>
 
-#### Filenaming:  
+### Filenaming:  
 
-\<**variable-name**\>\_\<**domain**\>\_\<**GCM-model-name**\>\_\<**experiment-name**\>\_\<**ensemble-member**\>\_\<**RCM-model-name**\>\_\<**RCM-version-id**\>\_\<**frequency-or-category**\>[\_\<**StartTime-EndTime**\>].nc
+\<**variable_id**\>\_\<**domain_id**\>\_\<**driving_source_id**\>\_\<**driving_experiment_id**\>\_\<**driving_variant_label**\>\_\<**source_id**\>\_\<**version_realization**\>\_\<**frequency**\>[\_\<**StartTime-EndTime**\>].nc
   
-#### Controlled Vocabulary:
+### Controlled Vocabulary:
 
+---
+---
 | **key** = | [*restriction*:] { item1 item2 ... }  | notes |
 | ------------ | ------------ | --------- |
-| **status** | { `test-data`, `staged`, `release` }  | |
-| **activity** | { `CORDEX-CMIP6`, `ACS-DOWNSCALING`, `ACS-BARRA2` }  | `CORDEX-CMIP6` can include additional grids that are not required by the CORDEX initiative. |
-| **product** | { `output`, `bias-adjusted-output`, `indices`, `bias-adjusted-indices` }  | |
-| **domain** | format = \<**region**\>-\<**grid**> <br /> { `AUS-11`, `AUS-15`, `AUS-17i`, `AUS-22`, `AUS-r005`, `GLOBAL-gn` }  | `AUS-15` is a CORDEX-Australasia example. <br /> `AUS-r005` is a AGCD indices example. <br /> `GLOBAL-gn` is a global climate model example where `gn` is the CMIP6 native grid abbreviation. |
-|  **RCM-institution** | { `BOM`, `CSIRO`, `none` } |  |
-|**GCM-model-name** | format = \<**institution_id**\>-\<**source_id**> <br/>  | (e.g. `CSIRO-ARCCSS-ACCESS-CM2`) <br/> Refer to [CMIP6 CV](https://github.com/WCRP-CMIP/CMIP6_CVs/blob/master/CMIP6_source_id.json) for valid institution and source names. |
-| **experiment-name** | *CMIP6*: { `historical`, `ssp126`, `ssp245`, `ssp370`, `ssp585`  } <br/> *ERA5*: { `evaluation` }  | Use `historical` when driving with an observational dataset like `AGCD` or `BARRA2` |
-| **ensemble-member** | { `r?i?p?f?`, `hres`, `eda`} | For CMIP6-driven simulations, use the ensemble string from the driving dataset (e.g. `r6i1p1f1`). <br/> `BARRA-R2` uses ERA5's HRES (deterministic) forcing while `BARRA-RE2` uses ERA5's EDA (ensemble of DA) forcing. |
-| **RCM-model-name** | {  `BOM-BARPA-R`, `BOM-BARRA-R2`, `BOM-BARRA-RE2`, `CSIRO-CCAM-????`, `none` }  |
-| **RCM-version-id** | { `v?`, `none`, `<RCMVersionID>-<BCname>-<OBSname>-<REFperiod>`} | (e.g. `v2`, `v1-ecdfm-AGCD-1985-2014`) TODO: Determine process for updating version when data is corrected / updated. |
-| **frequency-or-category** | *output, bias-corrected-output*: { `mon`, `day`, `6hr`, `3hr`, `1hr`, `15min` } <br/> *indices, bias-corrected-indices*: { `climdex`, `fire`, `heat`, `coasts`, `tropical-cyclones`, ... } | There are categories for [climdex indices](https://www.climdex.org/learn/indices/) and also each of the ACS hazard teams.
-| **variable-name** | *output*: see [CORDEX-CMIP6 Atmosphere Variable List](https://docs.google.com/spreadsheets/d/1qUauozwXkq7r1g-L4ALMIkCNINIhhCPx/edit#gid=1672965248) <br/> *indices*: see [climdex indices list](https://www.climdex.org/learn/indices/) <br/> *bias-adjusted-output, bias-adjusted-indices*: add 'Adjust' to end of output variable-name (e.g. pr -> prAdjust); see [CORDEX-Adjust DRS](http://is-enes-data.github.io/CORDEX_adjust_drs.pdf) |
+| **project_id** | { `cordex`, `australian-climate-service` }  | |
+| **mip_era** | { `cmip6` }  | |
+| **activity_id** | *Model output*: { `rcm` } <br /> *BC &  analyses*: { `adjust`, `indices`, `indices-adjust` } | |
+| **domain_id** | format = \<**region**\>-\<**grid[i]**> <br/> { `AUS-10i`, `AUS-15`, `AUS-18`, `AUS-20i`, `AUS-r005`, `GLOBAL-gn` }  | `AUS-20i` is a CORDEX-Australasia example. <br/> `AUS-r005` is a AGCD indices example. <br /> `GLOBAL-gn` is a global climate model example where `gn` is the CMIP6 native grid abbreviation. |
+| **institution_id** | { `BOM`, `CSIRO`, `NSW-DPE`, `QLD-DES`, `none` } | |
+| **driving_source_id** | (e.g. `ERA5`, `ACCESS-CM2`) | <br/> Refer to [CORDEX-CMIP6 CV](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables/blob/main/Tables/CORDEX_CV.json) for valid source names. |
+| **driving_experiment_id** | *CMIP6*: { `historical`, `ssp126`, `ssp245`, `ssp370`, `ssp585`  } <br/> *ERA5*: { `evaluation` }  | Use `historical` when driving with an observational dataset like `AGCD` or `BARRA2` |
+| **driving_variant_label** | { `r?i?p?f?`, `hres`, `eda`} | For CMIP6-driven simulations, use the ensemble string from the driving dataset (e.g. `r6i1p1f1`). <br/> `BARRA-R2` uses ERA5's HRES (deterministic) forcing while `BARRA-RE2` uses ERA5's EDA (ensemble of DA) forcing. |
+| **source_id** | {  `BARPA-R`, `BARRA-R2`, `BARRA-RE2`, `CCAM-2203`, `none` }  | See https://opus.nci.org.au/display/CMIP/CMIP6-CORDEX+datasets for full list of Australian CORDEX models.
+| **version_realization** | { `v?-r?`, `none`, `<RCMVersionID>-<BCname>-<OBSname>-<REFperiod>`} | (e.g. `v1-r1`, `v1-ecdfm-AGCD-1985-2014`) |
+| **frequency** | *output, bias-corrected-output*: { `mon`, `day`, `6hr`, `3hr`, `1hr`, `15min` } <br/> *indices, bias-corrected-indices*: { `climdex`, `fire`, `heat`, `coasts`, `tropical-cyclones`, ... } | There are categories for [climdex indices](https://www.climdex.org/learn/indices/) and also each of the ACS hazard teams.
+| **variable_id** | *output*: see [CORDEX-CMIP6 Atmosphere Variable List](https://docs.google.com/spreadsheets/d/1qUauozwXkq7r1g-L4ALMIkCNINIhhCPx/edit#gid=1672965248) <br/> *indices*: see [climdex indices list](https://www.climdex.org/learn/indices/) <br/> *bias-adjusted-output, bias-adjusted-indices*: add 'Adjust' to end of output variable-name (e.g. pr -> prAdjust); see [CORDEX-Adjust DRS](http://is-enes-data.github.io/CORDEX_adjust_drs.pdf) |
+| **version** | { `vYYYYMMDD` }  | (e.g. `v20231117` ) |
 
-### ESCI
+---
+---
+### **ESCI**
 *Adopted from [CORDEX-CMIP5 archive specifications](http://is-enes-data.github.io/cordex_archive_specifications.pdf).*  
 See https://github.com/AusClimateService/ESCI-data-collection
 
-#### Directory structure:  
+### Directory structure:  
 
 /g/data/ia39/australian-climate-service/\<**status**\>/\<**activity**\>/\<**product**\>/\<**domain**\>/\<**GCM-model-name**\>/\<**CMIP5-experiment-name**\>/\<**CMIP5-ensemble-member**\>/\<**RCM-model-name**\>/\<**RCM-version-ID**\>/\<**frequency**\>/\<**variable-name**>
 
-#### Filenaming:  
+### Filenaming:  
 
 \<**variable-name**\>\_\<**domain**\>\_\<**GCM-model-name**\>\_\<**CMIP5-experiment-name**\>\_\<**CMIP5-ensemble-member**\>\_\<**RCM-institute-and-model-name**\>\_\<**RCM-version-id**\>\_\<**frequency**\>[\_\<**StartTime-EndTime**\>].nc
   
-#### Controlled Vocabulary:
+### Controlled Vocabulary:
 
 | **key** = | [*restriction*:] { item1 item2 ... }  |
 | ------------ | ------------ | 
