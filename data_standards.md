@@ -47,8 +47,8 @@ To be advised by ACS Data Governance Framework.
 ## DRSs
 
 ### **CORDEX-CMIP6+**
-*Adopted from [CORDEX-CMIP6 archive specifications](https://drive.google.com/file/d/1rHxVFXxtyWBuWzKWlpn55aSH0t5cWYdE/view).*  
-*updated 17/11/2023*
+*Adopted from [CORDEX-CMIP6 archive specifications SOD](https://drive.google.com/file/d/1r1oHCaOfL_kWqjqtTBrLlmow7p7Fe6Mz/view).*  
+*updated 21/11/2023*
 
 ### Directory structure:  
 
@@ -64,7 +64,7 @@ To be advised by ACS Data Governance Framework.
 | ------------ | ------------ | --------- |
 | **project_id** | { `cordex`, `australian-climate-service` }  | |
 | **mip_era** | { `cmip6` }  | |
-| **activity_id** | *Model output*: { `rcm` } <br /> *BC &  analyses*: { `adjust`, `indices`, `indices-adjust` } | |
+| **activity_id** | *Model output*: { `DD` } | |
 | **domain_id** | format = \<**region**\>-\<**grid[i]**> <br/> { `AUS-10i`, `AUS-15`, `AUS-18`, `AUS-20i`, `AUS-r005`, `GLOBAL-gn` }  | `AUS-20i` is a CORDEX-Australasia example. <br/> `AUS-r005` is a AGCD indices example. <br /> `GLOBAL-gn` is a global climate model example where `gn` is the CMIP6 native grid abbreviation. |
 | **institution_id** | { `BOM`, `CSIRO`, `NSW-DPE`, `QLD-DES`, `none` } | |
 | **driving_source_id** | (e.g. `ERA5`, `ACCESS-CM2`) | <br/> Refer to [CORDEX-CMIP6 CV](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables/blob/main/Tables/CORDEX_CV.json) for valid source names. |
