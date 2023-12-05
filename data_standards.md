@@ -62,8 +62,8 @@ To be advised by ACS Data Governance Framework.
 
 | **key** = | [*restriction*:] { item1 item2 ... }  | notes |
 | ------------ | ------------ | --------- |
-| **project_id** | { `cordex`, `australian-climate-service` }  | |
-| **mip_era** | { `cmip6` }  | |
+| **project_id** | { `CORDEX`, `output` }  | |
+| **mip_era** | { `CMIP6` }  | |
 | **activity_id** | *Model output*: { `DD` } | |
 | **domain_id** | format = \<**region**\>-\<**grid[i]**> <br/> { `AUS-10i`, `AUS-15`, `AUS-18`, `AUS-20i`, `AUS-r005`, `GLOBAL-gn` }  | `AUS-20i` is a CORDEX-Australasia example. <br/> `AUS-r005` is a AGCD indices example. <br /> `GLOBAL-gn` is a global climate model example where `gn` is the CMIP6 native grid abbreviation. |
 | **institution_id** | { `BOM`, `CSIRO`, `NSW-DPE`, `QLD-DES`, `none` } | |
