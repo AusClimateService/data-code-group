@@ -67,7 +67,7 @@ To be advised by ACS Data Governance Framework.
 | **activity_id** | *Model output*: { `DD` } | |
 | **domain_id** | format = \<**region**\>-\<**grid[i]**> <br/> { `AUS-10i`, `AUS-15`, `AUS-18`, `AUS-20i`, `AUS-r005`, `GLOBAL-gn` }  | `AUS-20i` is a CORDEX-Australasia example. <br/> `AUS-r005` is a AGCD indices example. <br /> `GLOBAL-gn` is a global climate model example where `gn` is the CMIP6 native grid abbreviation. |
 | **institution_id** | { `BOM`, `CSIRO`, `NSW-DPE`, `QLD-DES`, `none` } | |
-| **driving_source_id** | (e.g. `ERA5`, `ACCESS-CM2`) | <br/> Refer to [CORDEX-CMIP6 CV](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables/blob/main/Tables/CORDEX_CV.json) for valid source names. |
+| **driving_source_id** | (e.g. `ERA5`, `ACCESS-CM2`, `ACCESS-ESM1.5`, `NorESM2-MM`, `EC-Earth3`, `CMCC-ESM2`, `CNRM-ESM2-1`, `CESM2`) | <br/> Refer to [CORDEX-CMIP6 CV](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables/blob/main/Tables/CORDEX_CV.json) for valid source names. |
 | **driving_experiment_id** | *CMIP6*: { `historical`, `ssp126`, `ssp245`, `ssp370`, `ssp585`  } <br/> *ERA5*: { `evaluation` }  | Use `historical` when driving with an observational dataset like `AGCD` or `BARRA2` |
 | **driving_variant_label** | { `r?i?p?f?`, `hres`, `eda`} | For CMIP6-driven simulations, use the ensemble string from the driving dataset (e.g. `r6i1p1f1`). <br/> `BARRA-R2` uses ERA5's HRES (deterministic) forcing while `BARRA-RE2` uses ERA5's EDA (ensemble of DA) forcing. |
 | **source_id** | {  `BARPA-R`, `BARRA-R2`, `BARRA-RE2`, `CCAM-v2203-SN`, `none` }  | See https://opus.nci.org.au/display/CMIP/CMIP6-CORDEX+datasets for full list of Australian CORDEX models.
