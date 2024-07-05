@@ -42,3 +42,7 @@ Current active members:
 - Emma Howard
 - Alicia Takbash
 - Thomas Moore
+
+### Acknowledgements
+
+The ACS D&CG acknowledges the expertise and hard work of Paola Petrelli ([@paolap](https://github.com/paolap); UTas) and Sam Green ([@greensh16](https://github.com/greensh16); UNSW) in the development and maintenance of the [Australian Community Reference Climate Data Collection @ NCI](https://aus-ref-clim-data-nci.github.io/aus-ref-clim-data-nci/intro.html) in NCI project ia39.
